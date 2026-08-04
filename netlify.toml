@@ -1,0 +1,14 @@
+# Netlify 部署配置（纯静态站，零构建）
+[build]
+  publish = "."
+
+# 产品图为静态资源，设置较长缓存以加速访问
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

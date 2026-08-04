@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magic Home Lighting — Premium Crystal Chandeliers & LED Lighting Manufacturer</title>
+<meta name="description" content="Magic Home Lighting is a professional manufacturer and exporter of crystal chandeliers, LED lighting, and decorative lighting fixtures. Serving wholesalers and retailers worldwide.">
+<style>
+/* ==================== Reset & Base ==================== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#c9a84c;
+  --gold-light:#e0c674;
+  --gold-dark:#a88a3a;
+  --dark:#1a1a2e;
+  --dark-2:#16213e;
+  --dark-3:#0f3460;
+  --text:#2d2d2d;
+  --text-light:#666;
+  --bg:#ffffff;
+  --bg-soft:#f8f7f4;
+  --border:#e5e5e5;
+  --shadow:0 4px 24px rgba(0,0,0,.08);
+  --shadow-lg:0 12px 48px rgba(0,0,0,.15);
+  --transition:all .3s ease;
+  --radius:8px;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* ==================== Top Bar ==================== */
+.topbar{
+  background:var(--dark);
+  color:#aaa;
+  font-size:13px;
+  padding:8px 0;
+}
+.topbar .container{display:flex;justify-content:space-between;align-items:center}
+.topbar a{color:var(--gold-light);transition:var(--transition)}
+.topbar a:hover{color:#fff}
+.topbar .info{display:flex;gap:24px}
+.topbar .info span{display:flex;align-items:center;gap:6px}
+.topbar .info a{color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s}
+.topbar .info a:hover{color:var(--gold)}
+.topbar .socials{display:flex;gap:12px}
+.topbar .socials a{font-size:14px}
+
+/* ==================== Header ==================== */
+header{
+  background:rgba(255,255,255,.95);
+  backdrop-filter:blur(12px);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:1px solid var(--border);
+  box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+header .container{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .icon{
+  width:44px;height:44px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:22px;font-weight:700;
+  box-shadow:0 4px 12px rgba(201,168,76,.4);
+}
+.logo .text{display:flex;flex-direction:column;line-height:1.2}
+.logo .text .name{font-size:20px;font-weight:700;color:var(--dark);letter-spacing:.5px}
+.logo .text .tag{font-size:11px;color:var(--gold-dark);letter-spacing:2px;text-transform:uppercase}
+
+nav ul{display:flex;gap:32px}
+nav ul li a{
+  font-size:15px;font-weight:500;color:var(--text);
+  position:relative;padding:6px 0;transition:var(--transition);
+}
+nav ul li a::after{
+  content:'';position:absolute;bottom:0;left:0;width:0;height:2px;
+  background:var(--gold);transition:var(--transition);
+}
+nav ul li a:hover{color:var(--gold-dark)}
+nav ul li a:hover::after{width:100%}
+nav ul li a.active{color:var(--gold-dark)}
+nav ul li a.active::after{width:100%}
+
+.header-cta{
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  color:#fff;padding:10px 28px;border-radius:30px;
+  font-size:14px;font-weight:600;transition:var(--transition);
+  box-shadow:0 4px 12px rgba(201,168,76,.35);
+}
+.header-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(201,168,76,.5)}
+
+.mobile-toggle{display:none;font-size:24px;background:none;border:none;cursor:pointer;color:var(--dark)}
+
+/* ==================== Hero ==================== */
+.hero{
+  min-height:88vh;
+  display:flex;align-items:center;
+  position:relative;
+  background:linear-gradient(135deg,var(--dark) 0%,var(--dark-2) 40%,var(--dark-3) 100%);
+  overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:url('images/product-08.jpg') center/cover no-repeat;
+  opacity:.15;
+}
+.hero::after{
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:linear-gradient(90deg,var(--dark) 0%,transparent 60%,rgba(26,26,46,.6) 100%);
+}
+.hero .container{position:relative;z-index:2;max-width:1280px}
+.hero-content{max-width:640px}
+.hero .badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.3);
+  color:var(--gold-light);padding:8px 20px;border-radius:30px;
+  font-size:13px;font-weight:500;letter-spacing:1px;margin-bottom:24px;
+}
+.hero h1{
+  font-size:56px;font-weight:800;color:#fff;line-height:1.15;
+  margin-bottom:20px;letter-spacing:-1px;
+}
+.hero h1 span{color:var(--gold-light)}
+.hero p{
+  font-size:18px;color:#b0b0c0;line-height:1.7;
+  margin-bottom:36px;max-width:540px;
+}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.hero-actions .btn-primary{
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  color:#fff;padding:16px 40px;border-radius:30px;
+  font-size:15px;font-weight:600;transition:var(--transition);
+  box-shadow:0 8px 24px rgba(201,168,76,.35);
+}
+.hero-actions .btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(201,168,76,.5)}
+.hero-actions .btn-outline{
+  background:transparent;border:2px solid rgba(255,255,255,.25);color:#fff;
+  padding:14px 38px;border-radius:30px;font-size:15px;font-weight:600;
+  transition:var(--transition);
+}
+.hero-actions .btn-outline:hover{border-color:var(--gold-light);background:rgba(201,168,76,.1)}
+
+.hero-stats{
+  display:flex;gap:48px;margin-top:56px;
+  padding-top:36px;border-top:1px solid rgba(255,255,255,.1);
+}
+.hero-stats .stat{text-align:left}
+.hero-stats .stat .num{font-size:36px;font-weight:800;color:var(--gold-light)}
+.hero-stats .stat .label{font-size:13px;color:#888;margin-top:4px}
+
+/* ==================== Section Common ==================== */
+section{padding:100px 0}
+.section-head{text-align:center;margin-bottom:64px}
+.section-head .sub{
+  color:var(--gold-dark);font-size:14px;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;
+}
+.section-head h2{
+  font-size:40px;font-weight:800;color:var(--dark);letter-spacing:-.5px;
+}
+.section-head p{
+  color:var(--text-light);font-size:17px;max-width:600px;margin:16px auto 0;
+}
+
+/* ==================== Products Grid ==================== */
+#products{background:var(--bg-soft)}
+.product-filters{
+  display:flex;justify-content:center;gap:12px;margin-bottom:48px;flex-wrap:wrap;
+}
+.product-filters button{
+  padding:10px 28px;border:2px solid var(--border);background:#fff;
+  border-radius:30px;font-size:14px;font-weight:500;color:var(--text-light);
+  cursor:pointer;transition:var(--transition);
+}
+.product-filters button:hover,.product-filters button.active{
+  border-color:var(--gold);color:var(--gold-dark);background:rgba(201,168,76,.05);
+}
+
+.products-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
+}
+.product-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:var(--transition);
+  cursor:pointer;
+}
+.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.product-card .img-wrap{
+  width:100%;height:320px;overflow:hidden;position:relative;
+  background:linear-gradient(180deg,#1a1a1a 0%,#0a0a0a 100%);
+}
+.product-card .img-wrap img{
+  width:100%;height:100%;object-fit:contain;
+  transition:transform .5s ease;
+}
+.product-card:hover .img-wrap img{transform:scale(1.08)}
+.product-card .img-wrap .tag{
+  position:absolute;top:12px;left:12px;
+  background:var(--gold);color:#fff;padding:4px 14px;
+  border-radius:20px;font-size:11px;font-weight:600;letter-spacing:1px;
+}
+.product-card .info{padding:24px}
+.product-card .info .cat{font-size:12px;color:var(--gold-dark);font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.product-card .info h3{font-size:18px;font-weight:700;color:var(--dark);margin:8px 0 6px}
+.product-card .info .desc{font-size:14px;color:var(--text-light);line-height:1.5}
+.product-card .info .specs{
+  display:flex;gap:16px;margin-top:14px;padding-top:14px;
+  border-top:1px solid var(--border);font-size:13px;color:var(--text-light);
+}
+.product-card .info .specs span{display:flex;align-items:center;gap:4px}
+
+/* ==================== About ==================== */
+#about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-image{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-lg);
+}
+.about-image img{width:100%;height:520px;object-fit:cover}
+.about-image .exp-badge{
+  position:absolute;bottom:24px;left:24px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  color:#fff;padding:20px 32px;border-radius:var(--radius);
+  text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.2);
+}
+.about-image .exp-badge .num{font-size:36px;font-weight:800;line-height:1}
+.about-image .exp-badge .txt{font-size:13px;margin-top:4px;opacity:.9}
+
+.about-text .sub{
+  color:var(--gold-dark);font-size:14px;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;
+}
+.about-text h2{font-size:40px;font-weight:800;color:var(--dark);letter-spacing:-.5px;margin-bottom:20px}
+.about-text p{color:var(--text-light);font-size:16px;line-height:1.8;margin-bottom:16px}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+.about-feature{display:flex;gap:14px;align-items:flex-start}
+.about-feature .ic{
+  width:48px;height:48px;flex-shrink:0;
+  background:rgba(201,168,76,.1);border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;
+}
+.about-feature .txt h4{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.about-feature .txt p{font-size:13px;color:var(--text-light);line-height:1.5;margin:0}
+
+/* ==================== Advantages ==================== */
+#advantages{background:var(--dark)}
+#advantages .section-head h2{color:#fff}
+#advantages .section-head p{color:#a0a0b0}
+#advantages .section-head .sub{color:var(--gold-light)}
+
+.advantages-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.advantage-card{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);padding:36px 28px;text-align:center;
+  transition:var(--transition);
+}
+.advantage-card:hover{
+  background:rgba(201,168,76,.08);border-color:rgba(201,168,76,.2);
+  transform:translateY(-6px);
+}
+.advantage-card .ic{
+  width:64px;height:64px;margin:0 auto 20px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:28px;box-shadow:0 8px 20px rgba(201,168,76,.25);
+}
+.advantage-card h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:10px}
+.advantage-card p{font-size:14px;color:#999;line-height:1.6}
+
+/* ==================== Categories ==================== */
+#categories{background:var(--bg-soft)}
+.categories-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.category-card{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  height:280px;cursor:pointer;transition:var(--transition);
+  box-shadow:var(--shadow);
+}
+.category-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.category-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.category-card:hover img{transform:scale(1.1)}
+.category-card .overlay{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,.75));
+  padding:24px 20px 20px;
+}
+.category-card .overlay h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:4px}
+.category-card .overlay p{font-size:13px;color:rgba(255,255,255,.7)}
+.category-card .overlay .arrow{
+  position:absolute;top:16px;right:16px;
+  width:36px;height:36px;background:rgba(255,255,255,.15);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:18px;transition:var(--transition);
+}
+.category-card:hover .overlay .arrow{background:var(--gold)}
+
+/* ==================== Process ==================== */
+#process{background:#fff}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.process-grid::before{
+  content:'';position:absolute;top:40px;left:12%;right:12%;height:2px;
+  background:linear-gradient(90deg,var(--gold-light),var(--gold),var(--gold-light));
+  opacity:.3;
+}
+.process-step{text-align:center;position:relative}
+.process-step .num{
+  width:80px;height:80px;margin:0 auto 20px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:28px;font-weight:800;color:#fff;position:relative;z-index:2;
+  box-shadow:0 8px 24px rgba(201,168,76,.3);
+}
+.process-step h3{font-size:18px;font-weight:700;color:var(--dark);margin-bottom:8px}
+.process-step p{font-size:14px;color:var(--text-light);line-height:1.6;padding:0 12px}
+
+/* ==================== Contact ==================== */
+#contact{background:var(--bg-soft)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact-info h2{font-size:36px;font-weight:800;color:var(--dark);margin-bottom:16px}
+.contact-info p{color:var(--text-light);font-size:16px;line-height:1.7;margin-bottom:32px}
+.contact-items{display:flex;flex-direction:column;gap:24px}
+.contact-item{display:flex;gap:16px;align-items:flex-start}
+.contact-item .ic{
+  width:52px;height:52px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-size:20px;color:#fff;box-shadow:0 4px 12px rgba(201,168,76,.25);
+}
+.contact-item .txt h4{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:2px}
+.contact-item .txt p{font-size:14px;color:var(--text-light);margin:0}
+.contact-item .txt a{color:var(--text-light);text-decoration:none;border-bottom:1px solid var(--gold-dark);transition:color .2s}
+.contact-item .txt a:hover{color:var(--gold-dark)}
+
+.contact-form{
+  background:#fff;border-radius:var(--radius);padding:40px;
+  box-shadow:var(--shadow-lg);
+}
+.contact-form h3{font-size:22px;font-weight:700;color:var(--dark);margin-bottom:24px}
+.contact-form .form-group{margin-bottom:20px}
+.contact-form label{display:block;font-size:14px;font-weight:600;color:var(--dark);margin-bottom:6px}
+.contact-form input,.contact-form textarea,.contact-form select{
+  width:100%;padding:12px 16px;border:2px solid var(--border);border-radius:var(--radius);
+  font-size:14px;font-family:inherit;transition:var(--transition);background:#fafafa;
+}
+.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{
+  border-color:var(--gold);outline:none;background:#fff;
+}
+.contact-form textarea{resize:vertical;min-height:120px}
+.contact-form button{
+  width:100%;background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  color:#fff;border:none;padding:16px;border-radius:var(--radius);
+  font-size:16px;font-weight:600;cursor:pointer;transition:var(--transition);
+  box-shadow:0 6px 16px rgba(201,168,76,.3);
+}
+.contact-form button:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.45)}
+
+/* ==================== Footer ==================== */
+footer{background:var(--dark);color:#888;padding:64px 0 24px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-col h4{color:#fff;font-size:16px;font-weight:700;margin-bottom:20px}
+.footer-col p{font-size:14px;line-height:1.7;margin-bottom:12px}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:14px;transition:var(--transition)}
+.footer-col ul li a:hover{color:var(--gold-light)}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.footer-logo .icon{
+  width:40px;height:40px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:20px;font-weight:700;
+}
+.footer-logo .name{font-size:18px;font-weight:700;color:#fff}
+.footer-socials{display:flex;gap:12px;margin-top:16px}
+.footer-socials a{
+  width:40px;height:40px;background:rgba(255,255,255,.06);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+  transition:var(--transition);
+}
+.footer-socials a:hover{background:var(--gold);color:#fff}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.08);padding-top:24px;
+  display:flex;justify-content:space-between;align-items:center;font-size:13px;
+}
+.footer-bottom a{color:var(--gold-light)}
+
+/* ==================== Lightbox ==================== */
+.lightbox{
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,.9);z-index:9999;
+  display:none;align-items:center;justify-content:center;padding:40px;
+}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90%;max-height:85vh;object-fit:contain;border-radius:8px}
+.lightbox .close{
+  position:absolute;top:24px;right:32px;color:#fff;font-size:36px;
+  cursor:pointer;line-height:1;
+}
+.lightbox .nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  color:#fff;font-size:36px;cursor:pointer;padding:16px;
+  user-select:none;
+}
+.lightbox .nav.prev{left:20px}
+.lightbox .nav.next{right:20px}
+
+/* ==================== Responsive ==================== */
+@media(max-width:1024px){
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .categories-grid{grid-template-columns:repeat(4,1fr)}
+  .advantages-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:40px}
+  .process-grid::before{display:none}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .hero h1{font-size:42px}
+}
+@media(max-width:768px){
+  .topbar .info{display:none}
+  nav ul{display:none}
+  .mobile-toggle{display:block}
+  nav ul.active{
+    display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;
+    background:#fff;padding:20px;gap:16px;box-shadow:var(--shadow);
+  }
+  .hero h1{font-size:32px}
+  .hero p{font-size:15px}
+  .hero-stats{flex-wrap:wrap;gap:24px}
+  .hero-stats .stat .num{font-size:28px}
+  .products-grid{grid-template-columns:1fr}
+  .categories-grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-image img{height:360px}
+  .advantages-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center}
+  .section-head h2{font-size:28px}
+  .about-text h2{font-size:28px}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== Top Bar ==================== -->
+<div class="topbar">
+  <div class="container">
+    <div class="info">
+      <a href="mailto:al@magichomelighting.com">&#9993; al@magichomelighting.com</a>
+      <a href="https://wa.me/8613172251568" target="_blank" rel="noopener">&#9742; +86 131 7225 1568 (WhatsApp)</a>
+    </div>
+    <div class="socials">
+      <a href="#">Facebook</a>
+      <a href="https://www.instagram.com/magichomelighting/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== Header ==================== -->
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      <div class="icon">M</div>
+      <div class="text">
+        <span class="name">Magic Home Lighting</span>
+        <span class="tag">Crystal &amp; LED Lighting</span>
+      </div>
+    </a>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="header-cta">Get Quote</a>
+    <button class="mobile-toggle" onclick="document.getElementById('navMenu').classList.toggle('active')">&#9776;</button>
+  </div>
+</header>
+
+<!-- ==================== Hero ==================== -->
+<section class="hero" id="home" style="padding:0">
+  <div class="container">
+    <div class="hero-content">
+      <div class="badge">&#10022; Premium Lighting Manufacturer Since 2010</div>
+      <h1>Illuminating Homes with <span>Crystal Elegance</span></h1>
+      <p>Magic Home Lighting is a leading manufacturer and exporter of premium crystal chandeliers, LED lighting, and decorative fixtures &mdash; trusted by wholesalers and lighting retailers across 40+ countries.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">View Our Collection</a>
+        <a href="#contact" class="btn-outline">Request Catalog</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num">15+</div><div class="label">Years Experience</div></div>
+        <div class="stat"><div class="num">40+</div><div class="label">Countries Served</div></div>
+        <div class="stat"><div class="num">500+</div><div class="label">Lighting Models</div></div>
+        <div class="stat"><div class="num">1000+</div><div class="label">B2B Clients</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Products ==================== -->
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <div class="sub">Featured Collection</div>
+      <h2>Our Crystal Chandeliers</h2>
+      <p>Handcrafted with premium K9 crystal and stainless steel, our chandeliers combine timeless elegance with modern LED technology.</p>
+    </div>
+
+    <div class="product-filters">
+      <button class="active" data-filter="all">All Products</button>
+      <button data-filter="chandelier">Crystal Chandeliers</button>
+      <button data-filter="alabaster">Imitation Alabaster</button>
+      <button data-filter="size-800">Ø 800mm Round</button>
+      <button data-filter="size-600">Ø 600mm Round</button>
+      <button data-filter="size-400">Ø 400mm Round</button>
+      <button data-filter="size-oval">900×300mm Oval</button>
+      <button data-filter="pendant">Pendant Light</button>
+      <button data-filter="acrylic">Acrylic Pendant</button>
+      <button data-filter="glass">Glass Pendant</button>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <div class="product-card" data-cat="chandelier" data-img="images/product-01.jpg" data-size="size-800">
+        <div class="img-wrap"><span class="tag">Best Seller</span><img src="images/product-01.jpg" alt="Imperial Crown Crystal Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Imperial Crown Crystal Chandelier</h3>
+          <p class="desc">Round 800mm multi-tier chandelier. K9 crystal + 304 stainless steel frame, integrated warm-white LED (3000K). Ideal for grand halls &amp; hotel lobbies. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 800mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-02.jpg" data-size="size-600">
+        <div class="img-wrap"><img src="images/product-02.jpg" alt="Regal Gold Crystal Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Regal Gold Crystal Chandelier</h3>
+          <p class="desc">Mid-size 600mm round chandelier with golden stainless steel frame and faceted K9 crystals. Integrated dimmable LED. Perfect for dining rooms &amp; living areas.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 600mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-04.jpg" data-size="size-800">
+        <div class="img-wrap"><span class="tag">New</span><img src="images/product-04.jpg" alt="Grand Crown Crystal Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Grand Crown Crystal Chandelier</h3>
+          <p class="desc">Statement 800mm round chandelier with full K9 crystal coverage and polished stainless steel. Integrated LED, adjustable height. Best for foyers &amp; double-height spaces.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 800mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-05.jpg" data-size="size-600">
+        <div class="img-wrap"><img src="images/product-05.jpg" alt="Royal Diamond Crystal Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Royal Diamond Crystal Chandelier</h3>
+          <p class="desc">Mid-size 600mm round chandelier with diamond-cut K9 crystals and brushed stainless frame. Warm-white LED integrated. Suits bedrooms &amp; open-plan living.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 600mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-07.jpg" data-size="size-oval">
+        <div class="img-wrap"><img src="images/product-07.jpg" alt="Tiered Halo Crystal Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Tiered Halo Crystal Chandelier</h3>
+          <p class="desc">Multi-tier oval chandelier (900×300mm) with cascading K9 crystals and stainless steel frame. Integrated LED. A dramatic centrepiece for large dining tables.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 900×300mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-08.jpg" data-size="size-800">
+        <div class="img-wrap"><span class="tag">Hot</span><img src="images/product-08.jpg" alt="Crystal Crown Large Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Crystal Crown Large Chandelier</h3>
+          <p class="desc">Large 800mm round chandelier with dense K9 crystal arrangement and polished stainless frame. Integrated LED. Ideal for villas, banquet halls &amp; showrooms.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 800mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-11.jpg" data-size="size-oval">
+        <div class="img-wrap"><img src="images/product-11.jpg" alt="Oval Crystal Cascade Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Oval Crystal Cascade Chandelier</h3>
+          <p class="desc">Long oval chandelier 900×300mm for dining tables. K9 crystal cascade with adjustable cables, stainless steel canopy. Integrated LED strip.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; 900×300mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-10.jpg" data-size="size-400">
+        <div class="img-wrap"><img src="images/product-10.jpg" alt="Petite Crystal Halo Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Petite Crystal Halo Chandelier</h3>
+          <p class="desc">Compact 400mm round chandelier with dense K9 crystal arrangement and stainless frame. Integrated LED. Modern look for bedrooms &amp; studies.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 400mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="chandelier" data-img="images/product-03.jpg" data-size="size-400">
+        <div class="img-wrap"><img src="images/product-03.jpg" alt="Crystal Halo Mini Chandelier"></div>
+        <div class="info">
+          <span class="cat">Crystal Chandelier</span>
+          <h3>Crystal Halo Mini Chandelier</h3>
+          <p class="desc">Compact 400mm round crystal chandelier with K9 crystals and stainless steel. Integrated LED. Perfect for bedrooms, hallways &amp; small dining areas.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Ø 400mm</span><span>&#128293; K9 + SS</span></div>
+        </div>
+      </div>
+    </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-01.jpg" data-name="Tiered Alabaster Pendant Light" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-01.jpg" alt="Tiered Alabaster Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Tiered Alabaster Pendant Light</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-02.jpg" data-name="Oval Halo Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-02.jpg" alt="Oval Halo Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Oval Halo Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-03.jpg" data-name="Spherical Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-03.jpg" alt="Spherical Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Spherical Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-04.jpg" data-name="Disc Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-04.jpg" alt="Disc Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Disc Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-05.jpg" data-name="Tall Cylinder Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-05.jpg" alt="Tall Cylinder Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Tall Cylinder Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-06.jpg" data-name="Drum Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-06.jpg" alt="Drum Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Drum Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-07.jpg" data-name="Linear Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-07.jpg" alt="Linear Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Linear Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-08.jpg" data-name="Bubble Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-08.jpg" alt="Bubble Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Bubble Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-09.jpg" data-name="Cluster Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-09.jpg" alt="Cluster Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Cluster Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-10.jpg" data-name="Stacked Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-10.jpg" alt="Stacked Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Stacked Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-11.jpg" data-name="Bell Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-11.jpg" alt="Bell Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Bell Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-12.jpg" data-name="Half-Moon Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-12.jpg" alt="Half-Moon Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Half-Moon Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-13.jpg" data-name="Ring Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-13.jpg" alt="Ring Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Ring Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-14.jpg" data-name="Tower Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-14.jpg" alt="Tower Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Tower Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-15.jpg" data-name="Wave Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-15.jpg" alt="Wave Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Wave Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-16.jpg" data-name="Real Marble Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Real Alabaster">
+        <div class="img-wrap"><span class="tag">Real Stone</span><div class="fav">&#9825;</div><img src="images/alabaster-16.jpg" alt="Real Marble Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Real Marble Alabaster Pendant</h3>
+          <p class="desc">Genuine natural alabaster marble pendant light with warm-white LED (3000K) and brass canopy. Each piece is unique with natural veining and translucency. Ideal for hotel suites, fine dining &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Real Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-17.jpg" data-name="Slim Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-17.jpg" alt="Slim Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Slim Alabaster Pendant</h3>
+          <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="wall" data-img="images/wall-01.jpg" data-name="Crystal Block Wall Lamp" data-catlabel="Wall Lamp" data-size="wall">
+        <div class="img-wrap"><span class="tag">New Arrival</span><img src="images/wall-01.jpg" alt="Crystal Block Wall Lamp"></div>
+        <div class="info">
+          <span class="cat">Wall Lamp</span>
+          <h3>Crystal Block Wall Lamp</h3>
+          <p class="desc">Chrome stainless steel mount with tiered K9 crystal blocks. Integrated warm-white LED (3000K) creates sparkling wall-wash light. Ideal for hotel corridors, vanity mirrors &amp; bedroom headboards. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Wall Mount</span><span>&#128293; K9 Crystal + 304 SS</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="wall" data-img="images/wall-02.jpg" data-name="Crystal Prism Wall Lamp" data-catlabel="Wall Lamp" data-size="wall">
+        <div class="img-wrap"><img src="images/wall-02.jpg" alt="Crystal Prism Wall Lamp"></div>
+        <div class="info">
+          <span class="cat">Wall Lamp</span>
+          <h3>Crystal Prism Wall Lamp</h3>
+          <p class="desc">Brushed gold stainless steel mount with cascading K9 crystal prisms. Dimmable warm-white LED delivers luxurious ambient sparkle. Perfect for hotel suites, dining rooms &amp; luxury interiors. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Wall Mount</span><span>&#128293; K9 Crystal + 304 SS</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="wall" data-img="images/wall-03.jpg" data-name="Cascade Crystal Wall Sconce" data-catlabel="Wall Lamp" data-size="wall">
+        <div class="img-wrap"><span class="tag">Premium</span><img src="images/wall-03.jpg" alt="Cascade Crystal Wall Sconce"></div>
+        <div class="info">
+          <span class="cat">Wall Lamp</span>
+          <h3>Cascade Crystal Wall Sconce</h3>
+          <p class="desc">Premium gold-finish stainless steel wall sconce with tiered crystal prisms and elegant crown detailing. Statement piece for hotel lobbies, entrance halls &amp; formal dining rooms. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Wall Mount</span><span>&#128293; K9 Crystal + 304 SS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="wall" data-img="images/wall-04.jpg" data-name="Acrylic Cylinder Wall Lamp" data-catlabel="Wall Lamp" data-size="wall" data-material="Acrylic">
+        <div class="img-wrap"><span class="tag">New</span><img src="images/wall-04.jpg" alt="Acrylic Cylinder Wall Lamp"></div>
+        <div class="info">
+          <span class="cat">Wall Lamp</span>
+          <h3>Acrylic Cylinder Wall Lamp</h3>
+          <p class="desc">Antique-bronze wall mount with vertically-ribbed clear acrylic cylinder shade. Integrated warm-white LED (3000K) produces a soft decorative wall-wash. Ideal for hotel corridors, bedside reading &amp; vanity mirrors. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Wall Mount</span><span>&#128293; Acrylic</span></div>
+          <div class="bottom"><span class="moq">MOQ 20</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="acrylic" data-img="images/acrylic-01.jpg" data-size="pendant">
+        <div class="img-wrap"><span class="tag">Custom Size</span><img src="images/acrylic-01.jpg" alt="Helix Acrylic Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Acrylic Pendant</span>
+          <h3>Helix Acrylic Pendant Light</h3>
+          <p class="desc">Statement vertical helix pendant with hand-cut acrylic leaf panels spiralling around a chrome core. Integrated warm-white LED. Length, diameter &amp; tiers fully customizable.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant</span><span>&#128293; Acrylic</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="acrylic" data-img="images/acrylic-02.jpg" data-size="pendant">
+        <div class="img-wrap"><img src="images/acrylic-02.jpg" alt="Swirl Acrylic Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Acrylic Pendant</span>
+          <h3>Swirl Acrylic Pendant Light</h3>
+          <p class="desc">Wide horizontal swirl pendant with sculpted acrylic ribbons. Built-in warm-white LED with brushed chrome canopy. Diameter &amp; drop height fully customizable.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant</span><span>&#128293; Acrylic</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="acrylic" data-img="images/acrylic-03.jpg" data-size="pendant">
+        <div class="img-wrap"><span class="tag">Custom Size</span><img src="images/acrylic-03.jpg" alt="Twin-Ring Acrylic Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Acrylic Pendant</span>
+          <h3>Twin-Ring Acrylic Pendant Light</h3>
+          <p class="desc">Two overlapping acrylic rings with frosted texture &amp; integrated warm-white LED. Ring diameters, drop length &amp; finish fully customizable. Signature piece for hotel atriums.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant</span><span>&#128293; Acrylic</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="acrylic" data-img="images/acrylic-04.jpg" data-size="pendant">
+        <div class="img-wrap"><span class="tag">Custom Size</span><img src="images/acrylic-04.jpg" alt="Cylinder Acrylic Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Acrylic Pendant</span>
+          <h3>Cylinder Acrylic Pendant Light</h3>
+          <p class="desc">Single-drop clear acrylic cylinder pendant with brushed brass canopy. Drop length &amp; finish fully customizable. Ideal for bedside &amp; accent lighting.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant</span><span>&#128293; Acrylic</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="acrylic" data-img="images/acrylic-05.jpg" data-size="pendant">
+        <div class="img-wrap"><span class="tag">Custom Size</span><img src="images/acrylic-05.jpg" alt="Cluster Acrylic Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Acrylic Pendant</span>
+          <h3>Cluster Acrylic Pendant Light</h3>
+          <p class="desc">3-drop clear acrylic cylinder cluster with cascading heights from a brushed brass canopy. Drop count, spacing &amp; length fully customizable. Perfect for stairwells &amp; dining rooms.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant</span><span>&#128293; Acrylic</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="acrylic" data-img="images/acrylic-06.jpg" data-size="pendant">
+        <div class="img-wrap"><span class="tag">Custom Size</span><img src="images/acrylic-06.jpg" alt="Linear Acrylic Pendant Light"></div>
+        <div class="info">
+          <span class="cat">Acrylic Pendant</span>
+          <h3>Linear Acrylic Pendant Light</h3>
+          <p class="desc">5-head linear clear acrylic cylinder row pendant with brushed brass canopy. Number of heads, spacing &amp; length fully customizable. Designed for kitchen islands &amp; long dining tables.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant</span><span>&#128293; Acrylic</span></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-01.jpg" data-name="Linear Amber Ribbed Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-01.jpg" alt="Linear Amber Ribbed Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Linear Amber Ribbed Glass Pendant</h3>
+          <p class="desc">Amber ribbed hand-blown glass pendant with a blackened-iron frame and integrated warm-white LED (3000K). Clean linear silhouette with artisan coloring. Ideal for dining rooms, kitchen islands & boutique hospitality. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-02.jpg" data-name="Amber Tiered Murano Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-02.jpg" alt="Amber Tiered Murano Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Amber Tiered Murano Glass Pendant</h3>
+          <p class="desc">Amber Murano-style tiered glass pendant on a durable iron frame with integrated warm-white LED (3000K). Rich translucent glow and sculptural form. Perfect for living areas & hotel lobbies. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-03.jpg" data-name="Rose Tiered Murano Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-03.jpg" alt="Rose Tiered Murano Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Rose Tiered Murano Glass Pendant</h3>
+          <p class="desc">Rose-tinted Murano-style tiered glass pendant with iron frame and integrated warm-white LED (3000K). Soft romantic glow with artisan texture. Ideal for bedrooms, salons & fine dining. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-04.jpg" data-name="Rose Ribbed Tiered Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-04.jpg" alt="Rose Ribbed Tiered Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Rose Ribbed Tiered Glass Pendant</h3>
+          <p class="desc">Rose ribbed tiered glass pendant on an iron frame with integrated warm-white LED (3000K). Elegant fluted shading and warm diffusion. Great for hospitality and residential interiors. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-05.jpg" data-name="Emerald Ribbed Tiered Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-05.jpg" alt="Emerald Ribbed Tiered Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Emerald Ribbed Tiered Glass Pendant</h3>
+          <p class="desc">Emerald-green ribbed tiered glass pendant with iron frame and integrated warm-white LED (3000K). Bold jewel-tone statement with fluted glass. Perfect for feature staircases & restaurants. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-06.jpg" data-name="Iridescent Murano Disc Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-06.jpg" alt="Iridescent Murano Disc Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Iridescent Murano Disc Glass Pendant</h3>
+          <p class="desc">Iridescent Murano-style disc glass pendant on an iron frame with integrated warm-white LED (3000K). Colour-shifting surface that catches the light. Ideal for reception areas & designer interiors. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-07.jpg" data-name="Smoke Curved Tiered Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-07.jpg" alt="Smoke Curved Tiered Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Smoke Curved Tiered Glass Pendant</h3>
+          <p class="desc">Smoke-grey curved tiered glass pendant with iron frame and integrated warm-white LED (3000K). Subtle, sophisticated tint with flowing form. Great for lounges, bedrooms & modern spaces. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="glass" data-img="images/glass-08.jpg" data-name="Smoke Ribbed Drum Glass Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-08.jpg" alt="Smoke Ribbed Drum Glass Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Smoke Ribbed Drum Glass Pendant</h3>
+          <p class="desc">Smoke-grey ribbed drum glass pendant on an iron frame with integrated warm-white LED (3000K). Contemporary drum silhouette with soft diffused light. Ideal for dining tables & open-plan living. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Categories ==================== -->
+<section id="categories">
+  <div class="container">
+    <div class="section-head">
+      <div class="sub">Product Range</div>
+      <h2>Explore Our Collection</h2>
+      <p>Browse our curated lighting ranges &mdash; crystal chandeliers, imitation alabaster pendants, wall lamps &amp; customizable acrylic pendants. All crafted with K9 crystal, premium acrylic and stainless steel frames.</p>
+    </div>
+    <div class="categories-grid">
+      <a href="products.html#size-800" class="category-card" data-img="images/product-04.jpg">
+        <img src="images/product-04.jpg" alt="Round 800mm Chandeliers">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Round 800mm</h3>
+          <p>Grand statement chandeliers</p>
+        </div>
+      </a>
+      <a href="products.html#size-600" class="category-card" data-img="images/product-02.jpg">
+        <img src="images/product-02.jpg" alt="Round 600mm Chandeliers">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Round 600mm</h3>
+          <p>Mid-size dining &amp; living</p>
+        </div>
+      </a>
+      <a href="products.html#size-400" class="category-card" data-img="images/product-03.jpg">
+        <img src="images/product-03.jpg" alt="Round 400mm Chandeliers">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Round 400mm</h3>
+          <p>Compact bedroom &amp; hallway</p>
+        </div>
+      </a>
+      <a href="products.html#size-oval" class="category-card" data-img="images/product-07.jpg">
+        <img src="images/product-07.jpg" alt="Oval 900×300mm Chandeliers">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Oval 900×300mm</h3>
+          <p>Long dining table cascade</p>
+        </div>
+      </a>
+      <a href="products.html#alabaster" class="category-card" data-img="images/alabaster-16.jpg">
+        <img src="images/alabaster-16.jpg" alt="Imitation Alabaster Pendant Lights">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Imitation Alabaster</h3>
+          <p>Pendant Lights &mdash; warm stone glow</p>
+        </div>
+      </a>
+      <a href="products.html#wall" class="category-card" data-img="images/wall-02.jpg">
+        <img src="images/wall-02.jpg" alt="Crystal Wall Lamps">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Wall Lamp</h3>
+          <p>K9 crystal &amp; acrylic wall sconces</p>
+        </div>
+      </a>
+      <a href="products.html#acrylic" class="category-card" data-img="images/acrylic-03.jpg">
+        <img src="images/acrylic-03.jpg" alt="Acrylic Pendant Lights">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Acrylic Pendant</h3>
+          <p>Custom-sized modern acrylic pendants</p>
+        </div>
+      </a>
+      <a href="products.html#glass" class="category-card" data-img="images/glass-02.jpg">
+        <img src="images/glass-02.jpg" alt="Glass Pendant Lights">
+        <div class="overlay">
+          <div class="arrow">&rarr;</div>
+          <h3>Glass Pendant</h3>
+          <p>Hand-blown glass &amp; iron pendants</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== About ==================== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="images/product-04.jpg" alt="Magic Home Lighting Workshop">
+        <div class="exp-badge">
+          <div class="num">15+</div>
+          <div class="txt">Years of<br>Excellence</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="sub">About Magic Home Lighting</div>
+        <h2>Crafting Light, Inspiring Spaces</h2>
+        <p>Magic Home Lighting is a premier manufacturer and exporter of decorative lighting based in China. Since 2010, we have specialized in designing and producing high-quality crystal chandeliers, LED lighting fixtures, and custom lighting solutions for the global market.</p>
+        <p>Our products are crafted with precision using premium K9 crystals, stainless steel, and energy-efficient LED technology. We serve wholesalers, retailers, interior designers, and project contractors across Europe, Africa, the Middle East, and Southeast Asia.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="ic">&#10004;</div>
+            <div class="txt"><h4>OEM &amp; ODM</h4><p>Custom design and manufacturing to your specifications</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="ic">&#127744;</div>
+            <div class="txt"><h4>Quality Certified</h4><p>CE, RoHS, SAA certified products</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="ic">&#128230;</div>
+            <div class="txt"><h4>Global Shipping</h4><p>Export to 40+ countries with full logistics support</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="ic">&#128101;</div>
+            <div class="txt"><h4>Dedicated Support</h4><p>Personal account manager for every client</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Advantages ==================== -->
+<section id="advantages">
+  <div class="container">
+    <div class="section-head">
+      <div class="sub">Why Choose Us</div>
+      <h2>The Magic Home Advantage</h2>
+      <p>We combine manufacturing expertise with export experience to deliver lighting solutions that exceed expectations.</p>
+    </div>
+    <div class="advantages-grid">
+      <div class="advantage-card">
+        <div class="ic">&#128293;</div>
+        <h3>Premium Materials</h3>
+        <p>K9 grade crystal, 304 stainless steel, and top-brand LED chips for lasting brilliance.</p>
+      </div>
+      <div class="advantage-card">
+        <div class="ic">&#127919;</div>
+        <h3>Custom Design</h3>
+        <p>Full OEM/ODM service with in-house R&amp;D team. From concept to production in weeks.</p>
+      </div>
+      <div class="advantage-card">
+        <div class="ic">&#128640;</div>
+        <h3>Fast Delivery</h3>
+        <p>Efficient production lines ensure 15-30 day lead times. Sample orders in 7 days.</p>
+      </div>
+      <div class="advantage-card">
+        <div class="ic">&#128737;</div>
+        <h3>Quality Assurance</h3>
+        <p>100% inspection before shipping. CE, RoHS, SAA certifications for all major markets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Process ==================== -->
+<section id="process">
+  <div class="container">
+    <div class="section-head">
+      <div class="sub">How We Work</div>
+      <h2>Our Simple 4-Step Process</h2>
+      <p>From inquiry to delivery, we make B2B lighting procurement seamless and efficient.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="num">1</div>
+        <h3>Send Inquiry</h3>
+        <p>Tell us your needs via email or WhatsApp. Share product codes or custom requirements.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">2</div>
+        <h3>Get Quotation</h3>
+        <p>Receive a detailed quotation with pricing, specs, and packaging within 24 hours.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">3</div>
+        <h3>Confirm &amp; Produce</h3>
+        <p>Approve the sample and PI. We start production with regular quality updates.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">4</div>
+        <h3>Ship &amp; Deliver</h3>
+        <p>We handle packing, documentation, and shipping. Door-to-door or FOB &mdash; your choice.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Contact ==================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="sub" style="color:var(--gold-dark);font-size:14px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px">Get In Touch</div>
+        <h2>Let's Light Up Your Business</h2>
+        <p>Request our full product catalog, ask for a quotation, or discuss your custom lighting project. We respond within 24 hours.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ic">&#9993;</div>
+            <div class="txt">
+              <h4>Email</h4>
+              <p><a href="mailto:al@magichomelighting.com">al@magichomelighting.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">&#9742;</div>
+            <div class="txt">
+              <h4>Phone &amp; WhatsApp</h4>
+              <p><a href="https://wa.me/8613172251568" target="_blank" rel="noopener">+86 131 7225 1568</a> &middot; <a href="tel:+8613172251568">Call</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">&#127759;</div>
+            <div class="txt">
+              <h4>Headquarters</h4>
+              <p>Guzhen Town, Zhongshan City<br>Guangdong Province, China</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">&#128344;</div>
+            <div class="txt">
+              <h4>Business Hours</h4>
+              <p>Mon - Sat: 9:00 AM - 6:00 PM (GMT+8)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Request a Quote</h3>
+        <form onsubmit="submitForm(event)">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Company</label>
+            <input type="text" placeholder="Your company name">
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" required placeholder="you@company.com">
+          </div>
+          <div class="form-group">
+            <label>WhatsApp / Phone</label>
+            <input type="text" placeholder="+XX XXX XXX XXXX">
+          </div>
+          <div class="form-group">
+            <label>Product Interest</label>
+            <select>
+              <option value="">Select a category...</option>
+              <option>Crystal Chandeliers</option>
+              <option>Ceiling Lights</option>
+              <option>Pendant Lights</option>
+              <option>Wall Lamps</option>
+              <option>Custom / OEM Project</option>
+              <option>Full Catalog</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us about your requirements, quantities, target market, etc."></textarea>
+          </div>
+          <button type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Footer ==================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <div class="icon">M</div>
+          <span class="name">Magic Home Lighting</span>
+        </div>
+        <p>Premium manufacturer and exporter of crystal chandeliers, LED lighting, and decorative fixtures. Based in Zhongshan, China &mdash; the lighting capital of the world.</p>
+        <div class="footer-socials">
+          <a href="#">f</a>
+          <a href="https://www.instagram.com/magichomelighting/" target="_blank" rel="noopener">ig</a>
+          <a href="#">in</a>
+          <a href="#">wa</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#products">Crystal Chandeliers</a></li>
+          <li><a href="#products">Ceiling Lights</a></li>
+          <li><a href="#products">Pendant Lights</a></li>
+          <li><a href="#products">Wall Lamps</a></li>
+          <li><a href="#products">LED Lighting</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#advantages">Why Choose Us</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:al@magichomelighting.com">al@magichomelighting.com</a></li>
+          <li><a href="https://wa.me/8613172251568" target="_blank" rel="noopener">+86 131 7225 1568</a></li>
+          <li>Guzhen, Zhongshan</li>
+          <li>Guangdong, China</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Magic Home Lighting. All rights reserved.</div>
+      <div><a href="#home">Back to Top &uarr;</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== Lightbox ==================== -->
+<div class="lightbox" id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <span class="nav prev" onclick="navLightbox(-1)">&#8249;</span>
+  <img src="" id="lightboxImg" alt="Product View">
+  <span class="nav next" onclick="navLightbox(1)">&#8250;</span>
+</div>
+
+<script>
+// ---- Product Filter ----
+document.querySelectorAll('.product-filters button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.product-filters button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.product-card').forEach(card => {
+      const matchCat = filter === 'all' || card.dataset.cat === filter;
+      const matchSize = filter === 'all' || card.dataset.size === filter;
+      if (matchCat || matchSize) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// ---- Lightbox ----
+let currentImg = 0;
+let imgList = [];
+
+function collectImages() {
+  imgList = [];
+  document.querySelectorAll('.product-card:not([style*="none"]) .img-wrap img').forEach(img => {
+    imgList.push(img.src);
+  });
+}
+
+document.querySelectorAll('.product-card').forEach((card, i) => {
+  card.addEventListener('click', () => {
+    collectImages();
+    const img = card.querySelector('img');
+    currentImg = imgList.indexOf(img.src);
+    if (currentImg < 0) currentImg = 0;
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+
+function navLightbox(dir) {
+  currentImg += dir;
+  if (currentImg >= imgList.length) currentImg = 0;
+  if (currentImg < 0) currentImg = imgList.length - 1;
+  document.getElementById('lightboxImg').src = imgList[currentImg];
+}
+
+document.getElementById('lightbox').addEventListener('click', (e) => {
+  if (e.target.id === 'lightbox') closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('lightbox').classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
+});
+
+// ---- Category cards open lightbox ----
+document.querySelectorAll('.category-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const src = card.dataset.img;
+    document.getElementById('lightboxImg').src = src;
+    imgList = [src];
+    currentImg = 0;
+    document.getElementById('lightbox').classList.add('active');
+  });
+});
+
+// ---- Nav active state on scroll ----
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('nav ul li a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    const top = sec.offsetTop - 120;
+    if (window.scrollY >= top) current = sec.getAttribute('id');
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+});
+
+// ---- Form submit (opens pre-filled email to sales) ----
+function submitForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const name = form.querySelector('input[type="text"]')?.value || '';
+  const company = form.querySelectorAll('input[type="text"]')[1]?.value || '';
+  const email = form.querySelector('input[type="email"]')?.value || '';
+  const phone = form.querySelectorAll('input[type="text"]')[2]?.value || '';
+  const interest = form.querySelector('select')?.value || '';
+  const message = form.querySelector('textarea')?.value || '';
+
+  const subject = encodeURIComponent('New Inquiry from ' + (name || 'Website Visitor') + (interest ? ' - ' + interest : ''));
+  const body = encodeURIComponent(
+    'Name: ' + name + '\n' +
+    'Company: ' + company + '\n' +
+    'Email: ' + email + '\n' +
+    'WhatsApp/Phone: ' + phone + '\n' +
+    'Product Interest: ' + interest + '\n\n' +
+    'Message:\n' + message + '\n'
+  );
+  window.location.href = 'mailto:al@magichomelighting.com?subject=' + subject + '&body=' + body;
+
+  const btn = form.querySelector('button');
+  btn.textContent = 'Opening your email...';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'Inquiry Sent! We will contact you within 24 hours.';
+    btn.style.background = '#16a34a';
+    setTimeout(() => {
+      btn.textContent = 'Send Inquiry';
+      btn.disabled = false;
+      btn.style.background = '';
+      form.reset();
+    }, 3000);
+  }, 1200);
+}
+
+// ---- Close mobile menu on link click ----
+document.querySelectorAll('nav ul li a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navMenu').classList.remove('active');
+  });
+});
+</script>
+
+</body>
+</html>
