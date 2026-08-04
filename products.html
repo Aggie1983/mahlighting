@@ -110,6 +110,13 @@ nav ul li a.active::after{width:100%}
 .pagination .page-btn.active{background:var(--gold);border-color:var(--gold);color:#fff}
 .pagination .page-btn:disabled{opacity:.4;cursor:not-allowed}
 
+/* Page size toolbar */
+.page-toolbar{display:flex;justify-content:space-between;align-items:center;margin-top:24px;flex-wrap:wrap;gap:12px}
+.page-toolbar .showing{font-size:13px;color:var(--text-light)}
+.page-toolbar .size-select{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-light)}
+.page-toolbar .size-select select{padding:6px 10px;border:1px solid var(--border);border-radius:6px;font-size:13px;background:#fff;cursor:pointer;outline:none;color:var(--text)}
+.page-toolbar .size-select select:focus{border-color:var(--gold)}
+
 /* ==================== Products Grid ==================== */
 .products-section{padding:56px 0 100px;background:var(--bg-soft)}
 .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
@@ -264,12 +271,12 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   <div class="container">
     <div class="filter-row">
       <span class="label">Category:</span>
-      <button class="filter-btn active" data-dim="cat" data-filter="all">All Products <span class="count">(46)</span></button>
+      <button class="filter-btn active" data-dim="cat" data-filter="all">All Products <span class="count">(50)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="chandelier">Crystal Chandelier <span class="count">(11)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="alabaster">Imitation Alabaster <span class="count">(17)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="wall">Wall Lamp <span class="count">(4)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="acrylic">Acrylic Pendant <span class="count">(6)</span></button>
-      <button class="filter-btn" data-dim="cat" data-filter="glass">Glass Pendant <span class="count">(8)</span></button>
+      <button class="filter-btn" data-dim="cat" data-filter="glass">Glass Pendant <span class="count">(12)</span></button>
     </div>
     <div class="filter-row">
       <span class="label">Size / Type:</span>
@@ -278,7 +285,7 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
       <button class="filter-btn" data-dim="size" data-filter="size-600">Ø 600mm Round <span class="count">(3)</span></button>
       <button class="filter-btn" data-dim="size" data-filter="size-400">Ø 400mm Round <span class="count">(3)</span></button>
       <button class="filter-btn" data-dim="size" data-filter="size-oval">900×300mm Oval <span class="count">(2)</span></button>
-      <button class="filter-btn" data-dim="size" data-filter="pendant">Pendant Light <span class="count">(31)</span></button>
+      <button class="filter-btn" data-dim="size" data-filter="pendant">Pendant Light <span class="count">(35)</span></button>
       <button class="filter-btn" data-dim="size" data-filter="wall">Wall Lamp <span class="count">(4)</span></button>
     </div>
   </div>
@@ -795,6 +802,58 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
           <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
+      <!-- NEW: 2026-08-04 Glass Pendants -->
+      <div class="product-card" data-cat="glass" data-img="images/glass-09.jpg" data-name="Linear Clear Glass Petal Chandelier" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-09.jpg" alt="Linear Clear Glass Petal Chandelier"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Linear Clear Glass Petal Chandelier</h3>
+          <p class="desc">Elegant linear chandelier featuring hand-blown clear glass petals arranged on a polished iron frame. Rectangular canopy with adjustable chain suspension. Warm-white LED integrated (3000K). Perfect for dining rooms and conference tables. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="glass" data-img="images/glass-10.jpg" data-name="Blue Iridescent Glass Disc Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-10.jpg" alt="Blue Iridescent Glass Disc Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Blue Iridescent Glass Disc Pendant</h3>
+          <p class="desc">Stunning cluster pendant with hand-crafted blue iridescent glass discs suspended on a brass-finish iron frame. Each disc catches and reflects light in shifting ocean-blue tones. Statement piece for foyers and high-ceiling spaces. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="glass" data-img="images/glass-11.jpg" data-name="Tiered Clear Glass Bell Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-11.jpg" alt="Tiered Clear Glass Bell Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Tiered Clear Glass Bell Pendant</h3>
+          <p class="desc">Dramatic multi-tier pendant with cascading clear glass bell-shaped elements on a chrome-finish iron frame. Four graduated tiers create a waterfall effect of light. Adjustable chain for custom drop length. Ideal for stairwells and grand entrances. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="glass" data-img="images/glass-12.jpg" data-name="Pink Iridescent Glass Disc Pendant" data-catlabel="Glass Pendant" data-size="pendant" data-material="Glass + Iron">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/glass-12.jpg" alt="Pink Iridescent Glass Disc Pendant"></div>
+        <div class="info">
+          <span class="cat">Glass Pendant</span>
+          <h3>Pink Iridescent Glass Disc Pendant</h3>
+          <p class="desc">Romantic cluster pendant featuring hand-blown pink iridescent glass discs on a vintage brass iron frame. Soft rose and champagne tones shimmer with ambient light. A boutique statement piece for bedrooms, boutiques, and upscale lounges. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Glass + Iron</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="page-toolbar">
+      <span class="showing" id="showingText">Showing 1–4 of 46 products</span>
+      <div class="size-select">
+        <span>Per page:</span>
+        <select id="pageSizeSelect">
+          <option value="4" selected>4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+      </div>
     </div>
     <div class="no-results" id="noResults">No products found in this category.</div>
     <div class="pagination" id="pagination"></div>
@@ -872,7 +931,7 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
 // ---- Filter ----
 const cards = Array.from(document.querySelectorAll('.product-card'));
 const noResults = document.getElementById('noResults');
-const PAGE_SIZE = 8;
+let PAGE_SIZE = 4;
 let currentPage = 1;
 let imgList = [];
 let currentImg = 0;
@@ -903,6 +962,7 @@ function render() {
   pageItems.forEach(card => { card.style.display = ''; });
 
   noResults.style.display = filtered.length === 0 ? 'block' : 'none';
+  updateShowingText(filtered.length, start, pageItems.length);
   renderPagination(totalPages);
   collectVisibleImages();
 }
@@ -923,6 +983,19 @@ function applyFilters() {
   currentPage = 1;
   render();
 }
+
+function updateShowingText(total, start, count) {
+  const el = document.getElementById('showingText');
+  if (!el) return;
+  if (total === 0) { el.textContent = 'No products to show'; return; }
+  const end = start + count;
+  el.textContent = 'Showing ' + (start + 1) + '\u2013' + end + ' of ' + total + ' products';
+}
+
+document.getElementById('pageSizeSelect').addEventListener('change', (e) => {
+  PAGE_SIZE = parseInt(e.target.value, 10);
+  applyFilters();
+});
 
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
