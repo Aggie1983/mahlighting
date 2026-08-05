@@ -331,14 +331,7 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
       <button class="filter-btn" data-dim="cat" data-filter="floor-lamp">Floor Lamp <span class="count">(0)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="table-lamp">Table Lamp <span class="count">(0)</span></button>
     </div>
-    <div class="filter-row">
-      <span class="label">Size / Type:</span>
-      <button class="filter-btn active" data-dim="size" data-filter="all">All Sizes</button>
-      <button class="filter-btn" data-dim="size" data-filter="size-800">Ø 800mm Round <span class="count">(3)</span></button>
-      <button class="filter-btn" data-dim="size" data-filter="size-600">Ø 600mm Round <span class="count">(3)</span></button>
-      <button class="filter-btn" data-dim="size" data-filter="size-400">Ø 400mm Round <span class="count">(3)</span></button>
-      <button class="filter-btn" data-dim="size" data-filter="size-oval">900×300mm Oval <span class="count">(2)</span></button>
-    </div>
+<!-- Size/Type options shown inside product detail cards -->
   </div>
 </div>
 
@@ -994,12 +987,7 @@ function getActive(dimension) {
 
 function getFiltered() {
   const cat = getActive('cat');
-  const size = getActive('size');
-  return cards.filter(card => {
-    const matchCat = cat === 'all' || card.dataset.cat === cat;
-    const matchSize = size === 'all' || card.dataset.size === size;
-    return matchCat && matchSize;
-  });
+  return cards.filter(card => cat === 'all' || card.dataset.cat === cat);
 }
 
 function render() {
@@ -1089,13 +1077,6 @@ function initFromHash() {
   if (catBtn) {
     document.querySelectorAll('.filter-btn[data-dim="cat"]').forEach(b => b.classList.remove('active'));
     catBtn.classList.add('active');
-    return;
-  }
-  const sizeBtn = document.querySelector('.filter-btn[data-dim="size"][data-filter="' + hash + '"]');
-  if (sizeBtn) {
-    document.querySelectorAll('.filter-btn[data-dim="size"]').forEach(b => b.classList.remove('active'));
-    sizeBtn.classList.add('active');
-    return;
   }
 }
 initFromHash();
