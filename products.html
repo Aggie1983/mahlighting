@@ -207,11 +207,64 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   nav ul{display:none}
   .mobile-toggle{display:block}
   nav ul.active{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;padding:20px;gap:16px;box-shadow:var(--shadow)}
-  .page-hero h1{font-size:32px}
-  .products-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
+
+  /* Hero — shrink so products are visible */
+  .page-hero{padding:36px 0 28px}
+  .page-hero h1{font-size:24px;margin-bottom:8px}
+  .page-hero p{font-size:14px;line-height:1.5;padding:0 8px}
+  .page-hero .sub{font-size:12px;letter-spacing:2px;margin-bottom:8px}
+
+  /* Header — compact on mobile */
+  header .container{padding:10px 16px}
+  .logo .icon{width:36px;height:36px;font-size:18px}
+  .logo .text .name{font-size:16px}
+  .logo .text .tag{font-size:9px;letter-spacing:1px}
+
+  /* Filter bar — sticky horizontal scroll, single row */
+  .filter-bar{padding:10px 0;top:64px}
+  .filter-bar .container{padding:0 12px}
+  .filter-row{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;justify-content:flex-start;gap:8px;padding:4px 0;scrollbar-width:none}
+  .filter-row::-webkit-scrollbar{display:none}
+  .filter-btn{padding:7px 14px;font-size:13px;flex-shrink:0;white-space:nowrap}
+  .filter-btn .count{font-size:10px}
+
+  /* Page toolbar — stack vertically */
+  .page-toolbar{flex-direction:column;align-items:flex-start;gap:10px;margin-top:16px}
+  .page-toolbar .showing{font-size:12px}
+
+  /* Products — 2 columns on small phones, smaller cards */
+  .products-section{padding:24px 0 60px}
+  .products-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .product-card .img-wrap{height:160px}
+  .product-card .info{padding:12px}
+  .product-card .info h3{font-size:14px;margin:6px 0 4px;line-height:1.3}
+  .product-card .info .cat{font-size:10px}
+  .product-card .info .desc{font-size:12px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .product-card .info .specs{gap:6px;margin-top:8px;padding-top:8px;font-size:11px}
+  .product-card .info .specs span{font-size:11px}
+  .product-card .info .bottom{padding-top:10px;flex-wrap:wrap}
+  .product-card .info .price{font-size:14px}
+  .product-card .info .moq{font-size:11px}
+  .product-card .info .inquire{padding:6px 14px;font-size:12px}
+
+  /* Pagination */
+  .pagination{margin-top:28px;gap:6px}
+  .pagination .page-btn{min-width:36px;height:36px;padding:0 10px;font-size:13px}
+
+  /* Footer */
+  .footer-grid{grid-template-columns:1fr;gap:24px}
   .footer-bottom{flex-direction:column;gap:12px;text-align:center}
-  .filter-bar{top:70px}
+
+  /* Lightbox on mobile */
+  .lightbox{padding:20px}
+  .lightbox .nav{font-size:32px;padding:10px}
+  .lightbox .close{font-size:32px;top:16px;right:20px}
+}
+@media(max-width:380px){
+  /* Very small phones — tighter cards */
+  .product-card .img-wrap{height:140px}
+  .product-card .info h3{font-size:13px}
+  .product-card .info .specs{display:none}
 }
 </style>
 </head>
