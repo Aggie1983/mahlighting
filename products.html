@@ -103,6 +103,10 @@ nav ul li a.active::after{width:100%}
 }
 .filter-btn:hover,.filter-btn.active{border-color:var(--gold);color:var(--gold-dark);background:rgba(201,168,76,.06)}
 .filter-btn .count{font-size:11px;opacity:.7;margin-left:4px}
+.filter-row.sub-filters{padding-top:10px;border-top:1px dashed var(--border);margin-top:2px;display:none}
+.filter-row.sub-filters.visible{display:flex}
+.filter-row.sub-filters .label{font-size:12px;color:var(--gold-dark);letter-spacing:1px;text-transform:uppercase}
+.filter-btn.sub-btn{padding:6px 14px;font-size:12px;border-width:1px}
 /* ==================== Pagination ==================== */
 .pagination{display:flex;justify-content:center;gap:8px;margin-top:40px;flex-wrap:wrap}
 .pagination .page-btn{min-width:42px;height:42px;padding:0 14px;border:1px solid #e2e2e2;background:#fff;color:var(--dark);border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;transition:all .2s}
@@ -324,13 +328,24 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   <div class="container">
     <div class="filter-row">
       <span class="label">Category:</span>
-      <button class="filter-btn active" data-dim="cat" data-filter="all">All Products <span class="count">(65)</span></button>
-      <button class="filter-btn" data-dim="cat" data-filter="pendant">Pendant Light <span class="count">(58)</span></button>
+      <button class="filter-btn active" data-dim="cat" data-filter="all">All Products <span class="count">(89)</span></button>
+      <button class="filter-btn" data-dim="cat" data-filter="pendant">Pendant Light <span class="count">(67)</span></button>
+      <button class="filter-btn" data-dim="cat" data-filter="ceiling-lamp">Ceiling Lamp <span class="count">(0)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="wall">Wall Lamp <span class="count">(4)</span></button>
-      <button class="filter-btn" data-dim="cat" data-filter="ceiling-fan">Ceiling Fan Light <span class="count">(3)</span></button>
-      <button class="filter-btn" data-dim="cat" data-filter="floor-lamp">Floor Lamp <span class="count">(0)</span></button>
       <button class="filter-btn" data-dim="cat" data-filter="table-lamp">Table Lamp <span class="count">(0)</span></button>
+      <button class="filter-btn" data-dim="cat" data-filter="floor-lamp">Floor Lamp <span class="count">(0)</span></button>
+      <button class="filter-btn" data-dim="cat" data-filter="ceiling-fan">Ceiling Fan Light <span class="count">(18)</span></button>
     </div>
+    <div class="filter-row sub-filters" id="subFilters">
+      <span class="label">Type:</span>
+      <button class="filter-btn sub-btn active" data-dim="subcat" data-filter="all">All Pendant <span class="count">(67)</span></button>
+      <button class="filter-btn sub-btn" data-dim="subcat" data-filter="crystal-chandelier">Crystal Chandeliers <span class="count">(20)</span></button>
+      <button class="filter-btn sub-btn" data-dim="subcat" data-filter="glass-pendant">Glass Pendant <span class="count">(12)</span></button>
+      <button class="filter-btn sub-btn" data-dim="subcat" data-filter="imitation-alabaster">Imitation Alabaster <span class="count">(26)</span></button>
+      <button class="filter-btn sub-btn" data-dim="subcat" data-filter="acrylic-pendant">Acrylic Pendant <span class="count">(9)</span></button>
+    </div>
+  </div>
+</div>
 <!-- Size/Type options shown inside product detail cards -->
   </div>
 </div>
@@ -461,101 +476,101 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/16503.jpg" data-name="16503" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/16503.jpg" alt="16503"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/16503.jpg" data-name="16503" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Crystal">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/16503.jpg" alt="16503" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>16503</h3>
           <p class="desc">Crystal ceiling light, 5x E14 + 36W LED, rectangular crystals on top, warm atmosphere.</p>
-          <div class="specs"><span>Light: 5x E14 + LED</span><span>Power: 36W LED</span></div>
+          <div class="specs"><span>&#128293; 5x E14 + LED</span><span>&#9881; 36W LED</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17172.jpg" data-name="17172" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17172.jpg" alt="17172"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17172.jpg" data-name="17172" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Crystal">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17172.jpg" alt="17172" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17172</h3>
           <p class="desc">Extra-large crystal pendant, 74x E14 + 421W LED, for large spaces.</p>
-          <div class="specs"><span>Light: 74x E14 + LED</span><span>Power: 421W LED</span><span>CCT: 4500K</span></div>
+          <div class="specs"><span>&#128293; 74x E14 + LED</span><span>&#9881; 421W LED</span><span>&#9728; 4500K</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17174.jpg" data-name="17174" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17174.jpg" alt="17174"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17174.jpg" data-name="17174" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Metal+Glass">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17174.jpg" alt="17174" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17174</h3>
           <p class="desc">Crystal strands elegantly intertwined, traditional elegance + modern design. For large spaces.</p>
-          <div class="specs"><span>Light: 6x E14 + LED</span><span>Power: 92W LED</span><span>CCT: 4500K</span><span>Material: Metal+Glass</span></div>
+          <div class="specs"><span>&#128293; 6x E14 + LED</span><span>&#9881; 92W LED</span><span>&#9728; 4500K</span><span>&#128295; Metal+Glass</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17175.jpg" data-name="17175" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17175.jpg" alt="17175"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17175.jpg" data-name="17175" data-catlabel="Crystal Chandelier" data-size="size-custom" data-material="Metal+Glass">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17175.jpg" alt="17175" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17175</h3>
-          <p class="desc">Crystal ceiling light, 4x E14 + 36W LED, crystals reflect light, luxurious effect.</p>
-          <div class="specs"><span>Light: 4x E14 + LED</span><span>Power: 36W LED</span><span>CCT: 4500K</span><span>Size: W500 x H235</span><span>Material: Metal+Glass</span></div>
+          <p class="desc">Crystal chandelier, 4x E14 + 36W LED, crystals reflect light, luxurious effect.</p>
+          <div class="specs"><span>&#128293; 4x E14 + LED</span><span>&#9881; 36W LED</span><span>&#9728; 4500K</span><span>&#128207; W500 x H235</span><span>&#128295; Metal+Glass</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17698.jpg" data-name="17698" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17698.jpg" alt="17698"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17698.jpg" data-name="17698" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Glass+Metal">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17698.jpg" alt="17698" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17698</h3>
           <p class="desc">Black metal ring crystal chandelier, 70 light sources, crystal strands in rows, visually stunning.</p>
-          <div class="specs"><span>Light: 70x E14</span><span>Material: Glass+Metal</span></div>
+          <div class="specs"><span>&#128293; 70x E14</span><span>&#128295; Glass+Metal</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17708.jpg" data-name="17708" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17708.jpg" alt="17708"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17708.jpg" data-name="17708" data-catlabel="Crystal Chandelier" data-size="size-custom" data-material="Metal+Glass">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17708.jpg" alt="17708" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17708</h3>
-          <p class="desc">Crystal ceiling light, transparent glass crystal pendants, multi-layer. For halls/restaurants.</p>
-          <div class="specs"><span>Light: 6x E14 + LED</span><span>Power: 60W LED</span><span>CCT: 4500K</span><span>Size: W600 x H310</span><span>Material: Metal+Glass</span></div>
+          <p class="desc">Crystal chandelier, transparent glass crystal pendants, multi-layer. For halls/restaurants.</p>
+          <div class="specs"><span>&#128293; 6x E14 + LED</span><span>&#9881; 60W LED</span><span>&#9728; 4500K</span><span>&#128207; W600 x H310</span><span>&#128295; Metal+Glass</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17710.jpg" data-name="17710" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17710.jpg" alt="17710"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17710.jpg" data-name="17710" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Metal+Glass">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17710.jpg" alt="17710" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17710</h3>
-          <p class="desc">Crystal ceiling light, 12x E14 + 98W integrated LED, 3000K warm white.</p>
-          <div class="specs"><span>Light: 12x E14 + LED</span><span>Power: 98W LED</span><span>CCT: 3000K</span><span>Material: Metal+Glass</span></div>
+          <p class="desc">Crystal chandelier, 12x E14 + 98W integrated LED, 3000K warm white.</p>
+          <div class="specs"><span>&#128293; 12x E14 + LED</span><span>&#9881; 98W LED</span><span>&#9728; 3000K</span><span>&#128295; Metal+Glass</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17711.jpg" data-name="17711" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17711.jpg" alt="17711"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17711.jpg" data-name="17711" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Metal+Glass">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17711.jpg" alt="17711" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17711</h3>
           <p class="desc">Luxurious layered crystal chandelier, covered with sparkling crystals.</p>
-          <div class="specs"><span>Light: 33x E14</span><span>Material: Metal+Glass</span></div>
+          <div class="specs"><span>&#128293; 33x E14</span><span>&#128295; Metal+Glass</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-cat="pendant" data-img="images/17713.jpg" data-name="17713 GLAMUR" data-catlabel="Crystal Chandelier" data-size="size-800">
-        <div class="img-wrap"><span class="tag">New</span><div class="fav">&#9825;</div><img src="images/17713.jpg" alt="17713 GLAMUR"></div>
+      <div class="product-card" data-cat="pendant" data-img="images/17713.jpg" data-name="17713 GLAMUR" data-catlabel="Crystal Chandelier" data-size="pendant" data-material="Crystal">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/17713.jpg" alt="17713 GLAMUR" loading="lazy"></div>
         <div class="info">
           <span class="cat">Crystal Chandelier</span>
           <h3>17713 GLAMUR</h3>
           <p class="desc">Glamur series crystal pendant, 20x E14 bulbs, glamorous style.</p>
-          <div class="specs"><span>Light: 20x E14</span></div>
+          <div class="specs"><span>&#128293; 20x E14</span></div>
           <div class="bottom"><span class="moq">MOQ 50</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
@@ -743,6 +758,105 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
           <h3>Slim Alabaster Pendant</h3>
           <p class="desc">Imitation alabaster pendant light with integrated warm-white LED (3000K) and brushed brass canopy. Real alabaster also available on request. Ideal for hotel rooms, dining areas &amp; bedside. CE/RoHS certified.</p>
           <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-18.jpg" data-name="Egg-Shape Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-18.jpg" alt="Egg-Shape Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Egg-Shape Alabaster Pendant</h3>
+          <p class="desc">Egg-shaped imitation alabaster pendant with natural brown veining, suspended from a black metal canopy and slim cord. Integrated warm-white LED (3000K) provides soft ambient light. Ideal for dining tables, bedside, and hotel suites. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-19.jpg" data-name="Dome Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-19.jpg" alt="Dome Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Dome Alabaster Pendant</h3>
+          <p class="desc">Classic dome-shaped imitation alabaster pendant with rich brown veining, paired with a black canopy and slim suspension cord. Integrated warm-white LED (3000K) casts a soft, even glow. Perfect for living rooms, entryways, and restaurant interiors. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-20.jpg" data-name="Brass-Trim Alabaster Dome Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-20.jpg" alt="Brass-Trim Alabaster Dome Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Brass-Trim Alabaster Dome Pendant</h3>
+          <p class="desc">Refined dome alabaster pendant finished with a brushed brass collar and small matte white cap, suspended from a black canopy. Integrated warm-white LED (3000K) creates warm, inviting light. Ideal for hotel lobbies, bedside reading lights, and high-end residential interiors. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Brass + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-21.jpg" data-name="Flat Disc Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-21.jpg" alt="Flat Disc Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Flat Disc Alabaster Pendant</h3>
+          <p class="desc">Slim flat-disc imitation alabaster pendant with subtle warm veining, mounted on a brushed brass stem and black canopy. Integrated warm-white LED (3000K) provides ambient downward light with a soft side glow. Ideal for hallways, bedside, and modern dining spaces. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Brass + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-22.jpg" data-name="Dome Alabaster Pendant with Marble Top" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-22.jpg" alt="Dome Alabaster Pendant with Marble Top"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Dome Alabaster Pendant with Marble Top</h3>
+          <p class="desc">Two-tone dome pendant: a polished white marble cylinder caps a warm-toned imitation alabaster dome with striking brown veining. Brass collar joins the two with a slim black rod and canopy. Integrated LED (3000K) gives a soft ambient glow. Ideal for kitchen islands, dining tables &amp; bedside. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Marble + Brass</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-23.jpg" data-name="Oval Alabaster Pendant with Brass Stem" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-23.jpg" alt="Oval Alabaster Pendant with Brass Stem"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Oval Alabaster Pendant with Brass Stem</h3>
+          <p class="desc">Compact oval-disc imitation alabaster pendant with subtle cream veining, suspended on a brushed brass stem and black canopy. Warm-white integrated LED (3000K) produces soft downward and side glow. Perfect for bedside, hallways and intimate dining corners. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Brass + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-24.jpg" data-name="Tall Egg-Shape Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-24.jpg" alt="Tall Egg-Shape Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Tall Egg-Shape Alabaster Pendant</h3>
+          <p class="desc">Sculptural egg-shaped imitation alabaster pendant with dramatic warm veining flowing from top to base. Slim black rod and canopy keep the focus on the alabaster body. Warm-white LED (3000K) casts an inviting ambient glow with a subtle uplight at the base. Ideal for entryways, dining tables and statement lighting. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-25.jpg" data-name="Marbled Dome Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-25.jpg" alt="Marbled Dome Alabaster Pendant"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Marbled Dome Alabaster Pendant</h3>
+          <p class="desc">Statement dome pendant in imitation alabaster with rich flowing brown marbling across the body. Black rod and canopy emphasize the sculptural shape. Integrated warm-white LED (3000K) lights the alabaster from within, revealing every vein. Ideal for living rooms, dining tables, hotel lobbies and feature walls. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Black Metal</span></div>
+          <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="pendant" data-img="images/alabaster-26.jpg" data-name="Tiered Marble Alabaster Pendant with Brass Canopy" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-26.jpg" alt="Tiered Marble Alabaster Pendant with Brass Canopy"></div>
+        <div class="info">
+          <span class="cat">Imitation Alabaster</span>
+          <h3>Tiered Marble Alabaster Pendant with Brass Canopy</h3>
+          <p class="desc">Sculptural tiered pendant in marbled imitation alabaster, suspended from a brushed brass canopy on a slender black cord. The carved shade reveals warm veins of cream and brown, lit from within by an integrated warm-white LED (3000K). Perfect for dining tables, hotel suites, entryways and feature walls. CE/RoHS certified.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Pendant Light</span><span>&#128293; Imitation Alabaster + Brass + Black Metal</span></div>
           <div class="bottom"><span class="moq">MOQ 10</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
@@ -1049,9 +1163,159 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
           <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
         </div>
       </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-01.jpg" data-name="Vintage Brass Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-01.jpg" alt="Vintage Brass Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Brass Crystal Ceiling Fan Light</h3>
+          <p class="desc">Exquisite vintage brass-finish ceiling fan light with cascading K9 crystal accents and carved ABS blades. Warm gold tones paired with sparkling crystal create a luxurious retro ambiance. Integrated LED downlight with 3CCT selectable color temperature. Perfect for classic living rooms, dining areas, and boutique hotels.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-02.jpg" data-name="Vintage Bronze Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-02.jpg" alt="Vintage Bronze Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Bronze Crystal Ceiling Fan Light</h3>
+          <p class="desc">Elegant bronze-finish vintage ceiling fan light featuring tiered crystal droplets and sculpted ABS blades. The rich bronze housing complements clear crystal for a sophisticated heritage look. Reversible motor with 3-speed control and integrated dimmable LED. Ideal for traditional interiors and grand hallways.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-03.jpg" data-name="Vintage Dark Bronze Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-03.jpg" alt="Vintage Dark Bronze Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Dark Bronze Crystal Ceiling Fan Light</h3>
+          <p class="desc">Dark bronze vintage ceiling fan light with cascading crystal elements and richly textured ABS blades. Deep bronze tones with antique patina finish deliver old-world charm. Features quiet reversible motor, 3CCT LED downlight, and remote control. Suited for classic study rooms and elegant dining spaces.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-04.jpg" data-name="Vintage Antique Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-04.jpg" alt="Vintage Antique Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Antique Crystal Ceiling Fan Light</h3>
+          <p class="desc">Antique-finish vintage ceiling fan light adorned with multi-tier crystal decorations and elegantly curved ABS blades. The aged metallic housing pairs beautifully with clear K9 crystal for timeless appeal. Integrated LED with memory function, 3-speed reversible motor. Perfect for vintage-themed restaurants and living rooms.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-05.jpg" data-name="Vintage Oil-Rubbed Bronze Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-05.jpg" alt="Vintage Oil-Rubbed Bronze Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Oil-Rubbed Bronze Crystal Ceiling Fan Light</h3>
+          <p class="desc">Oil-rubbed bronze vintage ceiling fan light with cascading crystal accents and dark walnut-tone ABS blades. The deep bronze finish with subtle highlights creates dramatic contrast against sparkling crystal. Quiet motor with 6-speed control, dimmable LED, and smart remote. Ideal for luxury bedrooms and classic living spaces.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-06.jpg" data-name="Vintage Champagne Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-06.jpg" alt="Vintage Champagne Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Champagne Crystal Ceiling Fan Light</h3>
+          <p class="desc">Champagne-gold vintage ceiling fan light featuring delicate crystal droplets and champagne-toned ABS blades. Soft golden hues combined with shimmering crystal create an airy, romantic atmosphere. Integrated 3CCT LED downlight, reversible motor, and remote control. Perfect for elegant bedrooms and boutique spaces.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-07.jpg" data-name="Vintage Walnut Bronze Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-07.jpg" alt="Vintage Walnut Bronze Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Walnut Bronze Crystal Ceiling Fan Light</h3>
+          <p class="desc">Walnut bronze vintage ceiling fan light with layered crystal accents and wood-grain ABS blades. Warm walnut tones blend with clear crystal for a refined vintage aesthetic. Features quiet reversible motor, dimmable LED, and 3-speed control. Ideal for classic dining rooms and study spaces.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-08.jpg" data-name="Vintage Black Iron Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-08.jpg" alt="Vintage Black Iron Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Black Iron Crystal Ceiling Fan Light</h3>
+          <p class="desc">Black iron vintage ceiling fan light with striking crystal chandelier element and matte ABS blades. Bold black metal frame contrasts with sparkling K9 crystal for dramatic vintage appeal. Powerful reversible motor with 3-speed control and integrated LED downlight. Perfect for industrial-vintage and loft-style interiors.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-09.jpg" data-name="Vintage Matte Black Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-09.jpg" alt="Vintage Matte Black Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Matte Black Crystal Ceiling Fan Light</h3>
+          <p class="desc">Matte black vintage ceiling fan light featuring cascading crystal details and sleek dark ABS blades. The matte finish creates a sophisticated modern-vintage fusion. Integrated dimmable LED, quiet reversible motor, and remote control with timer. Ideal for contemporary spaces with classic character.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-10.jpg" data-name="Vintage Noir Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-10.jpg" alt="Vintage Noir Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Noir Crystal Ceiling Fan Light</h3>
+          <p class="desc">Noir-finish vintage ceiling fan light with dramatic crystal chandelier center and sculpted ABS blades. Deep black housing with crystal accents creates bold vintage luxury. Features 3CCT LED, 6-speed reversible motor, and smart remote. Perfect for grand foyers and statement interiors.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-11.jpg" data-name="Vintage Tobacco Bronze Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-11.jpg" alt="Vintage Tobacco Bronze Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Tobacco Bronze Crystal Ceiling Fan Light</h3>
+          <p class="desc">Tobacco bronze vintage ceiling fan light with tiered crystal elements and warm-toned ABS blades. Rich tobacco finish with crystal sparkle delivers old-world elegance. Quiet reversible motor, dimmable LED downlight, and remote control. Ideal for traditional living rooms and hospitality spaces.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-12.jpg" data-name="Vintage Aged Brass Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-12.jpg" alt="Vintage Aged Brass Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Aged Brass Crystal Ceiling Fan Light</h3>
+          <p class="desc">Aged brass vintage ceiling fan light featuring crystal droplet accents and textured ABS blades. The aged brass patina pairs with clear crystal for authentic vintage charm. Integrated 3CCT LED, reversible motor with 3 speeds, and remote control. Perfect for classic interiors and boutique hotels.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-13.jpg" data-name="Vintage Gold Iron Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-13.jpg" alt="Vintage Gold Iron Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Gold Iron Crystal Ceiling Fan Light</h3>
+          <p class="desc">Gold iron vintage ceiling fan light with cascading crystal decorations and elegantly carved ABS blades. Golden metal framework combined with sparkling K9 crystal creates opulent vintage appeal. Quiet reversible motor, dimmable LED downlight, and remote. Ideal for luxury living spaces and grand dining rooms.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-14.jpg" data-name="Vintage Antique Brass Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-14.jpg" alt="Vintage Antique Brass Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Antique Brass Crystal Ceiling Fan Light</h3>
+          <p class="desc">Antique brass vintage ceiling fan light with multi-tier crystal accents and classic ABS blades. The warm antique brass finish complements crystal for timeless sophistication. Features integrated LED with memory function, 3-speed reversible motor, and remote control. Perfect for heritage homes and elegant restaurants.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
+      <div class="product-card" data-cat="ceiling-fan" data-img="images/fan-vintage-15.jpg" data-name="Vintage Rustic Black Crystal Ceiling Fan Light" data-catlabel="Vintage Ceiling Fan Light" data-size="Vintage" data-material="Crystal + Metal + ABS">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/fan-vintage-15.jpg" alt="Vintage Rustic Black Crystal Ceiling Fan Light" loading="lazy"></div>
+        <div class="info">
+          <span class="cat">Vintage Ceiling Fan Light</span>
+          <h3>Vintage Rustic Black Crystal Ceiling Fan Light</h3>
+          <p class="desc">Rustic black vintage ceiling fan light featuring crystal chandelier element and rustic-finish ABS blades. Bold rustic black housing with crystal sparkle creates a striking vintage-industrial look. Powerful reversible motor, dimmable LED, and remote with timer. Ideal for loft spaces and modern-vintage interiors.</p>
+          <div class="specs"><span>&#9881; LED Integrated</span><span>&#9728; Vintage Style</span><span>&#128293; Crystal + Metal + ABS</span></div>
+          <div class="bottom"><span class="moq">MOQ 5</span><a href="index.html#contact" class="inquire">Inquire</a></div>
+        </div>
+      </div>
     </div>
     <div class="page-toolbar">
-      <span class="showing" id="showingText">Showing 1–8 of 65 products</span>
+      <span class="showing" id="showingText">Showing 1–6 of 80 products</span>
       <div class="size-select">
         <span>Per page:</span>
         <select id="pageSizeSelect">
@@ -1142,6 +1406,14 @@ let currentPage = 1;
 let imgList = [];
 let currentImg = 0;
 
+// Map product labels to sub-category keys
+const SUBCAT_MAP = {
+  'Crystal Chandelier': 'crystal-chandelier',
+  'Glass Pendant': 'glass-pendant',
+  'Imitation Alabaster': 'imitation-alabaster',
+  'Acrylic Pendant': 'acrylic-pendant'
+};
+
 function getActive(dimension) {
   const btn = document.querySelector('.filter-btn[data-dim="' + dimension + '"].active');
   return btn ? btn.dataset.filter : 'all';
@@ -1149,7 +1421,15 @@ function getActive(dimension) {
 
 function getFiltered() {
   const cat = getActive('cat');
-  return cards.filter(card => cat === 'all' || card.dataset.cat === cat);
+  const subcat = getActive('subcat');
+  return cards.filter(card => {
+    if (cat !== 'all' && card.dataset.cat !== cat) return false;
+    if (cat === 'pendant' && subcat !== 'all') {
+      const cardSubcat = SUBCAT_MAP[card.dataset.catlabel];
+      if (cardSubcat !== subcat) return false;
+    }
+    return true;
+  });
 }
 
 function render() {
@@ -1168,7 +1448,8 @@ function render() {
     const comingSoon = {
       'ceiling-fan': 'Ceiling Fan Light',
       'floor-lamp': 'Floor Lamp',
-      'table-lamp': 'Table Lamp'
+      'table-lamp': 'Table Lamp',
+      'ceiling-lamp': 'Ceiling Lamp'
     };
     if (comingSoon[cat]) {
       noResults.innerHTML = '<div style="font-size:22px;font-weight:700;color:var(--gold-dark);margin-bottom:8px">Coming Soon</div><div style="font-size:15px">Our <strong>' + comingSoon[cat] + '</strong> collection is on the way.<br><a href="index.html#contact" style="color:var(--gold-dark);font-weight:600">Contact us</a> for custom orders &amp; early access.</div>';
@@ -1218,6 +1499,21 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     const dim = btn.dataset.dim;
     document.querySelectorAll('.filter-btn[data-dim="' + dim + '"]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+
+    // Show/hide sub-category row based on main category
+    if (dim === 'cat') {
+      const subFilters = document.getElementById('subFilters');
+      if (btn.dataset.filter === 'pendant') {
+        subFilters.classList.add('visible');
+      } else {
+        subFilters.classList.remove('visible');
+        // Reset subcat to 'all' when leaving pendant
+        document.querySelectorAll('.filter-btn[data-dim="subcat"]').forEach(b => b.classList.remove('active'));
+        const allSubBtn = document.querySelector('.filter-btn[data-dim="subcat"][data-filter="all"]');
+        if (allSubBtn) allSubBtn.classList.add('active');
+      }
+    }
+
     applyFilters();
   });
 });
@@ -1231,14 +1527,31 @@ document.getElementById('pagination').addEventListener('click', e => {
   if (grid) window.scrollTo({ top: grid.offsetTop - 100, behavior: 'smooth' });
 });
 
-// ---- Init from URL hash (e.g. products.html#pendant) ----
+// ---- Init from URL hash (e.g. products.html#pendant or #crystal-chandelier) ----
 function initFromHash() {
   const hash = (location.hash || '').replace('#', '');
   if (!hash) return;
+  // Try sub-category first (more specific), then category
+  const subBtn = document.querySelector('.filter-btn[data-dim="subcat"][data-filter="' + hash + '"]');
+  if (subBtn) {
+    // Activate pendant category first
+    const pendantBtn = document.querySelector('.filter-btn[data-dim="cat"][data-filter="pendant"]');
+    if (pendantBtn) {
+      document.querySelectorAll('.filter-btn[data-dim="cat"]').forEach(b => b.classList.remove('active'));
+      pendantBtn.classList.add('active');
+      document.getElementById('subFilters').classList.add('visible');
+    }
+    document.querySelectorAll('.filter-btn[data-dim="subcat"]').forEach(b => b.classList.remove('active'));
+    subBtn.classList.add('active');
+    return;
+  }
   const catBtn = document.querySelector('.filter-btn[data-dim="cat"][data-filter="' + hash + '"]');
   if (catBtn) {
     document.querySelectorAll('.filter-btn[data-dim="cat"]').forEach(b => b.classList.remove('active'));
     catBtn.classList.add('active');
+    if (catBtn.dataset.filter === 'pendant') {
+      document.getElementById('subFilters').classList.add('visible');
+    }
   }
 }
 initFromHash();
