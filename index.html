@@ -280,30 +280,65 @@ section{padding:100px 0}
 .advantage-card h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:10px}
 .advantage-card p{font-size:14px;color:#999;line-height:1.6}
 
-/* ==================== Categories ==================== */
+/* ==================== Categories (VIDI-style numbered) ==================== */
 #categories{background:var(--bg-soft)}
-.categories-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.categories-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .category-card{
   position:relative;border-radius:var(--radius);overflow:hidden;
-  height:280px;cursor:pointer;transition:var(--transition);
-  box-shadow:var(--shadow);
+  height:300px;cursor:pointer;transition:var(--transition);
+  box-shadow:var(--shadow);background:#0a0a0a;
 }
 .category-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
-.category-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.category-card:hover img{transform:scale(1.1)}
+.category-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;opacity:.75}
+.category-card:hover img{transform:scale(1.06);opacity:.9}
 .category-card .overlay{
-  position:absolute;bottom:0;left:0;right:0;
-  background:linear-gradient(transparent,rgba(0,0,0,.75));
-  padding:24px 20px 20px;
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.78) 100%);
+  padding:24px 22px 22px;
+  display:flex;flex-direction:column;justify-content:flex-end;
 }
-.category-card .overlay h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:4px}
-.category-card .overlay p{font-size:13px;color:rgba(255,255,255,.7)}
+.category-card .num{position:absolute;top:18px;left:20px;font-family:'Georgia',serif;font-size:13px;color:var(--gold);letter-spacing:3px;font-weight:600;background:rgba(0,0,0,.45);padding:4px 10px;border-radius:3px}
+.category-card .overlay h3{font-size:22px;font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:.5px}
+.category-card .overlay p{font-size:12px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
 .category-card .overlay .arrow{
-  position:absolute;top:16px;right:16px;
-  width:36px;height:36px;background:rgba(255,255,255,.15);
+  position:absolute;top:18px;right:18px;
+  width:38px;height:38px;background:rgba(255,255,255,.12);
   border-radius:50%;display:flex;align-items:center;justify-content:center;
   color:#fff;font-size:18px;transition:var(--transition);
 }
+.category-card:hover .overlay .arrow{background:var(--gold);color:#0a0a0a;transform:rotate(-45deg)}
+
+/* ==================== Series Features (3 blocks) ==================== */
+.series-feature{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:80px}
+.series-feature:nth-child(even){direction:rtl}
+.series-feature:nth-child(even) > *{direction:ltr}
+.series-feature .sf-img{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#0a0a0a}
+.series-feature .sf-img img{width:100%;height:100%;object-fit:cover}
+.series-feature .sf-img .ribbon{position:absolute;top:20px;left:20px;background:var(--gold);color:#0a0a0a;padding:5px 14px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.series-feature .sf-num{font-family:'Georgia',serif;font-size:13px;color:var(--gold);letter-spacing:3px;font-weight:600;margin-bottom:8px}
+.series-feature h3{font-size:32px;font-weight:700;color:var(--dark);margin-bottom:12px;line-height:1.2}
+.series-feature p{color:var(--text-light);font-size:15px;line-height:1.7;margin-bottom:20px}
+.series-feature .sf-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.series-feature .sf-tags span{background:#f0ede5;color:var(--gold-dark);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.series-feature .sf-cta{display:inline-flex;align-items:center;gap:8px;color:var(--gold-dark);font-weight:700;font-size:14px;letter-spacing:1px;text-transform:uppercase;transition:gap .2s ease}
+.series-feature .sf-cta:hover{gap:14px}
+
+/* ==================== Material Collections (VIDI-style) ==================== */
+.materials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.material-card{position:relative;padding:32px 28px;background:#fff;border:1px solid var(--border);border-radius:var(--radius);transition:var(--transition);overflow:hidden}
+.material-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--gold)}
+.material-card .num{font-family:'Georgia',serif;font-size:14px;color:var(--gold);letter-spacing:2px;font-weight:600;margin-bottom:14px}
+.material-card h4{font-size:20px;font-weight:700;color:var(--dark);margin-bottom:8px}
+.material-card p{font-size:14px;color:var(--text-light);line-height:1.6;margin-bottom:14px}
+.material-card .tag{display:inline-block;background:var(--bg-soft);color:var(--gold-dark);font-size:10px;padding:3px 10px;border-radius:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-right:6px}
+.material-card .arrow{position:absolute;bottom:24px;right:24px;font-size:22px;color:var(--gold);font-weight:700}
+
+/* ==================== Factory Story Stats ==================== */
+.story-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:40px}
+.story-stat{text-align:center;padding:24px 12px;background:#fff;border-radius:var(--radius);border-top:3px solid var(--gold);box-shadow:var(--shadow)}
+.story-stat .num{font-family:'Georgia',serif;font-size:34px;font-weight:700;color:var(--gold-dark);line-height:1;margin-bottom:6px}
+.story-stat .label{font-size:12px;color:var(--text-light);letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+
 .category-card:hover .overlay .arrow{background:var(--gold)}
 
 /* ==================== Process ==================== */
@@ -423,6 +458,10 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   .process-grid::before{display:none}
   .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
   .hero h1{font-size:42px}
+  .series-feature{grid-template-columns:1fr;gap:32px;margin-bottom:56px}
+  .series-feature:nth-child(even){direction:ltr}
+  .materials-grid{grid-template-columns:repeat(2,1fr)}
+  .story-stats{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:768px){
   .topbar .info{display:none}
@@ -438,6 +477,7 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   .hero-stats .stat .num{font-size:22px}
   .products-grid{grid-template-columns:1fr}
   .categories-grid{grid-template-columns:1fr 1fr}
+  .category-card{height:240px}
   .about-grid{grid-template-columns:1fr;gap:40px}
   .about-image img{height:360px}
   .advantages-grid{grid-template-columns:1fr}
@@ -448,6 +488,12 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   .section-head h2{font-size:28px}
   .about-text h2{font-size:28px}
   section{padding:64px 0}
+  .series-feature{grid-template-columns:1fr;gap:28px;margin-bottom:48px}
+  .series-feature h3{font-size:24px}
+  .materials-grid{grid-template-columns:1fr}
+  .material-card .arrow{bottom:18px;right:18px}
+  .story-stats{grid-template-columns:1fr 1fr;gap:14px}
+  .story-stat .num{font-size:26px}
 }
 </style>
 </head>
@@ -658,8 +704,8 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
         </div>
       </div>
 
-      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-04.jpg" data-name="Disc Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
-        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-04.jpg" alt="Disc Alabaster Pendant"></div>
+      <div class="product-card" data-cat="alabaster" data-img="images/alabaster-03.jpg" data-name="Disc Alabaster Pendant" data-catlabel="Imitation Alabaster" data-size="pendant" data-material="Imitation Alabaster">
+        <div class="img-wrap"><div class="fav">&#9825;</div><img src="images/alabaster-03.jpg" alt="Disc Alabaster Pendant"></div>
         <div class="info">
           <span class="cat">Imitation Alabaster</span>
           <h3>Disc Alabaster Pendant</h3>
@@ -1092,72 +1138,144 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
     <div class="section-head">
       <div class="sub">Product Range</div>
       <h2>Explore Our Collection</h2>
-      <p>Browse our lighting categories &mdash; pendant lights, ceiling lamps, wall lamps, ceiling fan lights, table lamps &amp; floor lamps. Crafted with K9 crystal, premium glass, acrylic and stainless steel frames.</p>
+      <p>Browse our lighting categories &mdash; crystal chandeliers, alabaster, glass &amp; acrylic pendant lights, wall lamps and ceiling fan lights. Crafted with K9 crystal, premium glass, acrylic and stainless steel frames.</p>
     </div>
     <div class="categories-grid">
-      <a href="products.html#pendant" class="category-card" data-img="images/alabaster-16.jpg">
-        <img src="images/alabaster-16.jpg" alt="Pendant Lights">
-        <div class="overlay">
-          <div class="arrow">&rarr;</div>
-          <h3>Pendant Light</h3>
-          <p>Crystal, alabaster, glass &amp; acrylic pendants</p>
-        </div>
-      </a>
-      <a href="products.html#wall" class="category-card" data-img="images/wall-02.jpg">
-        <img src="images/wall-02.jpg" alt="Wall Lamps">
-        <div class="overlay">
-          <div class="arrow">&rarr;</div>
-          <h3>Wall Lamp</h3>
-          <p>K9 crystal &amp; acrylic wall sconces</p>
-        </div>
-      </a>
-      <a href="products.html#ceiling-fan" class="category-card" data-img="images/fan-vintage-01.jpg">
-        <img src="images/fan-vintage-01.jpg" alt="Vintage Ceiling Fan Light">
-        <div class="overlay">
-          <div class="arrow">&rarr;</div>
-          <h3>Ceiling Fan Light</h3>
-          <p>Modern &amp; vintage crystal fan lights</p>
-        </div>
-      </a>
-      <a href="products.html#floor-lamp" class="category-card" data-img="images/acrylic-03.jpg">
-        <img src="images/acrylic-03.jpg" alt="Floor Lamp">
-        <div class="overlay">
-          <div class="arrow">&rarr;</div>
-          <h3>Floor Lamp</h3>
-          <p><em>Coming Soon</em> &mdash; statement floor lighting</p>
-        </div>
-      </a>
-      <a href="products.html#table-lamp" class="category-card" data-img="images/glass-02.jpg">
-        <img src="images/glass-02.jpg" alt="Table Lamp">
-        <div class="overlay">
-          <div class="arrow">&rarr;</div>
-          <h3>Table Lamp</h3>
-          <p><em>Coming Soon</em> &mdash; desk &amp; bedside lamps</p>
-        </div>
-      </a>
       <a href="products.html#crystal-chandelier" class="category-card" data-img="images/product-04.jpg">
-        <img src="images/product-04.jpg" alt="Crystal Chandeliers">
+        <img src="images/product-04.jpg" alt="Crystal Chandelier">
         <div class="overlay">
+          <div class="num">01</div>
+          <h3>Crystal Chandelier</h3>
+          <p>Statement Ceiling Pieces</p>
           <div class="arrow">&rarr;</div>
-          <h3>Crystal Chandeliers</h3>
-          <p>K9 crystal &amp; stainless steel</p>
         </div>
       </a>
       <a href="products.html#imitation-alabaster" class="category-card" data-img="images/alabaster-16.jpg">
-        <img src="images/alabaster-16.jpg" alt="Imitation Alabaster Pendants">
+        <img src="images/alabaster-16.jpg" alt="Pendant Light">
         <div class="overlay">
+          <div class="num">02</div>
+          <h3>Pendant Light</h3>
+          <p>Alabaster, Glass &amp; Acrylic</p>
           <div class="arrow">&rarr;</div>
-          <h3>Imitation Alabaster</h3>
-          <p>Stone-textured warm glow</p>
         </div>
       </a>
-      <a href="products.html#glass-pendant" class="category-card" data-img="images/glass-01.jpg">
-        <img src="images/glass-01.jpg" alt="Glass Pendants">
+      <a href="products.html#wall" class="category-card" data-img="images/wall-02.jpg">
+        <img src="images/wall-02.jpg" alt="Wall Lamp">
         <div class="overlay">
+          <div class="num">03</div>
+          <h3>Wall Lamp</h3>
+          <p>Hallways &amp; Bedsides</p>
           <div class="arrow">&rarr;</div>
-          <h3>Glass Pendant</h3>
-          <p>Hand-blown Murano-style glass</p>
         </div>
+      </a>
+      <a href="products.html#ceiling-fan" class="category-card" data-img="images/fan-vintage-01.jpg">
+        <img src="images/fan-vintage-01.jpg" alt="Ceiling Fan Light">
+        <div class="overlay">
+          <div class="num">04</div>
+          <h3>Ceiling Fan Light</h3>
+          <p>Light &amp; Airflow In One</p>
+          <div class="arrow">&rarr;</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Series Features ==================== -->
+<section id="series" style="background:#fff">
+  <div class="container">
+    <div class="section-head">
+      <div class="sub">Signature Series</div>
+      <h2>Three Collections, One Workshop</h2>
+      <p>From natural alabaster glow to vintage crystal drama and reversible ceiling fans &mdash; explore the series our wholesale partners reorder most.</p>
+    </div>
+
+    <div class="series-feature">
+      <div class="sf-img">
+        <span class="ribbon">01 / 03 · Imitation Alabaster</span>
+        <img src="images/alabaster-16.jpg" alt="Imitation Alabaster Pendant">
+      </div>
+      <div>
+        <div class="sf-num">STONE THAT HOLDS THE LIGHT</div>
+        <h3>Soft Glow, Real Character</h3>
+        <p>Hand-finished alabaster-effect resin shades diffuse light into a warm, even wash &mdash; perfect for dining rooms and bedside installations. Each shade is cast from a single mold and QC-checked for veining consistency before packing.</p>
+        <div class="sf-tags">
+          <span>Alabaster Resin</span><span>3000K Warm</span><span>In-House QC</span><span>OEM Sizes</span>
+        </div>
+        <a href="products.html#imitation-alabaster" class="sf-cta">Shop the Series <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="series-feature">
+      <div class="sf-img">
+        <span class="ribbon">02 / 03 · Vintage Crystal Chandelier</span>
+        <img src="images/product-04.jpg" alt="Crystal Chandelier">
+      </div>
+      <div>
+        <div class="sf-num">CRYSTAL THAT CATCHES THE ROOM</div>
+        <h3>From Round Tiered to Linear Statement</h3>
+        <p>K9-grade crystal strands hand-strung on 304 stainless steel frames. Choose from 400mm to 1200mm rounds, oval configurations, or linear bar layouts &mdash; all dimmable and built for hotel and dining-grade installations.</p>
+        <div class="sf-tags">
+          <span>K9 Crystal</span><span>304 Stainless</span><span>Dimmable LED</span><span>3-Year Warranty</span>
+        </div>
+        <a href="products.html#crystal-chandelier" class="sf-cta">Shop the Series <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="series-feature">
+      <div class="sf-img">
+        <span class="ribbon">03 / 03 · Vintage Ceiling Fan</span>
+        <img src="images/fan-vintage-01.jpg" alt="Vintage Ceiling Fan Light">
+      </div>
+      <div>
+        <div class="sf-num">LIGHT AND AIR, WORKING AS ONE</div>
+        <h3>Reversible, Quiet, Built to Order</h3>
+        <p>Vintage-finished ABS blades with hand-applied metallic coatings, paired with dimmable LED downlights. 6-speed reversible DC motor, remote included, and tunable 3000K / 4000K / 6000K. Reorders ship in 15&ndash;25 days.</p>
+        <div class="sf-tags">
+          <span>Reversible</span><span>6-Speed DC</span><span>3CCT</span><span>Remote Control</span>
+        </div>
+        <a href="products.html#ceiling-fan" class="sf-cta">Shop the Series <span>&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Material Collections ==================== -->
+<section id="materials" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head">
+      <div class="sub">Explore by Material</div>
+      <h2>Four Materials, Four Ways to Light a Room</h2>
+      <p>Every material behaves differently under light. Pick the finish that matches your room's character.</p>
+    </div>
+    <div class="materials-grid">
+      <a href="products.html#crystal-chandelier" class="material-card">
+        <div class="num">01</div>
+        <h4>Crystal Chandelier</h4>
+        <p>Hand-strung K9 crystal on 304 stainless frames. Statement pieces for foyers and dining rooms.</p>
+        <div><span class="tag">Crystal</span><span class="tag">Steel</span></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+      <a href="products.html#imitation-alabaster" class="material-card">
+        <div class="num">02</div>
+        <h4>Imitation Alabaster</h4>
+        <p>Cast alabaster resin with natural veining. Soft, even, glare-free warm glow.</p>
+        <div><span class="tag">Alabaster</span><span class="tag">Warm 3000K</span></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+      <a href="products.html#glass-pendant" class="material-card">
+        <div class="num">03</div>
+        <h4>Handmade Glass</h4>
+        <p>Hand-blown glass shades with unique character. Each piece is slightly different.</p>
+        <div><span class="tag">Glass</span><span class="tag">Handmade</span></div>
+        <div class="arrow">&rarr;</div>
+      </a>
+      <a href="products.html#acrylic-pendant" class="material-card">
+        <div class="num">04</div>
+        <h4>Acrylic Pendant</h4>
+        <p>Lightweight, durable, modern silhouettes. Cost-effective for volume projects.</p>
+        <div><span class="tag">Acrylic</span><span class="tag">Modern</span></div>
+        <div class="arrow">&rarr;</div>
       </a>
     </div>
   </div>
@@ -1197,6 +1315,35 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
             <div class="txt"><h4>Dedicated Support</h4><p>Personal account manager for every client</p></div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Factory Story (VIDI-style) ==================== -->
+<section id="story" style="background:var(--dark);color:#fff">
+  <div class="container">
+    <div class="section-head" style="text-align:center;margin-bottom:40px">
+      <div class="sub" style="color:var(--gold-light)">Why Magic Home Lighting</div>
+      <h2 style="color:#fff;font-size:36px;margin-top:8px">A Workshop, Not a Warehouse</h2>
+      <p style="color:#a0a0b0;max-width:680px;margin:0 auto">Based in Guzhen, Zhongshan &mdash; China's lighting capital &mdash; we work directly with our partner workshops, inspect every fixture, and ship on our own lead times.</p>
+    </div>
+    <div class="story-stats">
+      <div class="story-stat">
+        <div class="num">24h</div>
+        <div class="label">Quote Response</div>
+      </div>
+      <div class="story-stat">
+        <div class="num">5 pcs</div>
+        <div class="label">Minimum Order</div>
+      </div>
+      <div class="story-stat">
+        <div class="num">100%</div>
+        <div class="label">Pre-Shipment QC</div>
+      </div>
+      <div class="story-stat">
+        <div class="num">OEM+ODM</div>
+        <div class="label">Custom Welcome</div>
       </div>
     </div>
   </div>
@@ -1545,6 +1692,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   });
 });
 </script>
+<script src="inquiry.js" defer></script>
 
 </body>
 </html>
