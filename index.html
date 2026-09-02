@@ -52,6 +52,7 @@ ul{list-style:none}
 .topbar .info span{display:flex;align-items:center;gap:6px}
 .topbar .info a{color:inherit;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s}
 .topbar .info a:hover{color:var(--gold)}
+.wa-icon{height:20px;width:20px;display:inline-block;vertical-align:middle}
 .topbar .socials{display:flex;gap:12px}
 .topbar .socials a{font-size:14px}
 
@@ -369,10 +370,11 @@ section{padding:100px 0}
 .contact-item{display:flex;gap:16px;align-items:flex-start}
 .contact-item .ic{
   width:52px;height:52px;flex-shrink:0;
-  background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+  background:linear-gradient(135deg,#25D366,#128C7E);
   border-radius:12px;display:flex;align-items:center;justify-content:center;
-  font-size:20px;color:#fff;box-shadow:0 4px 12px rgba(201,168,76,.25);
+  font-size:20px;color:#fff;box-shadow:0 4px 12px rgba(37,211,102,.3);
 }
+.contact-item .ic .wa-icon-lg{height:34px;width:34px;display:block}
 .contact-item .txt h4{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:2px}
 .contact-item .txt p{font-size:14px;color:var(--text-light);margin:0}
 .contact-item .txt a{color:var(--text-light);text-decoration:none;border-bottom:1px solid var(--gold-dark);transition:color .2s}
@@ -504,7 +506,7 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
   <div class="container">
     <div class="info">
       <a href="mailto:al@magichomelighting.com">&#9993; al@magichomelighting.com</a>
-      <a href="https://wa.me/8613172251568" target="_blank" rel="noopener">&#9742; +86 131 7225 1568 (WhatsApp)</a>
+      <a href="https://wa.me/8613172251568" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><img src="images/whatsapp.png" alt="WhatsApp" class="wa-icon"> +86 131 7225 1568</a>
     </div>
     <div class="socials">
       <a href="#">Facebook</a>
@@ -1432,7 +1434,7 @@ footer{background:var(--dark);color:#888;padding:64px 0 24px}
             </div>
           </div>
           <div class="contact-item">
-            <div class="ic">&#9742;</div>
+            <div class="ic"><img src="images/whatsapp.png" alt="WhatsApp" class="wa-icon-lg"></div>
             <div class="txt">
               <h4>Phone &amp; WhatsApp</h4>
               <p><a href="https://wa.me/8613172251568" target="_blank" rel="noopener">+86 131 7225 1568</a> &middot; <a href="tel:+8613172251568">Call</a></p>
